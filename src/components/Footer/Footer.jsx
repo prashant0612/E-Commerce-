@@ -12,9 +12,9 @@ import youtubeIcon from './images/youtube.png'
 
 const Footer = () => {
   return (
-    <footer className='flex justify-evenly p-28 bg-slate-300'>
+    <footer className='flex justify-evenly p-12 bg-gradient-to-r from-purple-600 via-red-500 to-yellow-300'>
       <div className=' w-1/4 flex flex-col items-center text-center gap-1'>
-        <h1 className=' font-bold'>ABOUT</h1>
+        <h1 className='font-bold'>ABOUT</h1>
         <p>Bringing quality and convenience together – your go-to destination for Products that inspire and elevate your lifestyle</p>
         <span className='flex'> 
           <img src={americanIcon} alt='image' className=' w-16 h-14' /> 
