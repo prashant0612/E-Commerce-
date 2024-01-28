@@ -187,7 +187,7 @@ const Shop = () => {
   return (
     <div className="p-10 py-0 pt-20">
       {/* SLIDER-PART */}
-      <div className="relative overflow-hidden min-h-[550px] sm:min-h-[650px] bg-gray-100 flex justify-center items-center dark:bg-gray-950 dark:text-white duration-200 mb-10 ">
+      <div className="relative overflow-hidden min-h-[550px] sm:min-h-[650px] flex justify-center items-center dark:bg-gray-950 dark:text-white duration-200 mb-10 bg-gradient-to-br from-pink-300 via-transparent to-blue-300">
         {/* background pattern */}
         {/* hero section */}
         <div className="container pb-8 sm:pb-0 p-10">
