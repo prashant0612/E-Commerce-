@@ -291,7 +291,7 @@ const Kids = () => {
   };
 
   return (
-    <div className="w-full py-10 px-8 pt-20">
+    <div className="w-full py-10 px-8 pt-20 max-[450px]:p-0">
       <div className="relative overflow-hidden min-h-[550px] sm:min-h-[650px]  flex justify-center items-center dark:bg-gray-950 dark:text-white duration-200 bg-gradient-to-br from-pink-300 via-transparent to-blue-300">
         {/* background pattern */}
         {/* hero section */}
@@ -306,7 +306,7 @@ const Kids = () => {
                       data-aos="zoom-out"
                       data-aos-duration="500"
                       data-aos-once="true"
-                      className="text-5xl sm:text-6xl lg:text-7xl font-bold"
+                      className="text-5xl sm:text-5xl lg:text-7xl font-bold"
                     >
                       {data.title}
                     </h1>
@@ -334,7 +334,7 @@ const Kids = () => {
                       <img
                         src={data.img}
                         alt=""
-                        className="w-[300px] h-[300px] sm:h-[450px] sm:w-[450px] sm:scale-105 lg:scale-120 object-contain mx-auto"
+                        className="w-[300px] h-[300px] sm:h-[350px] sm:w-[350px] sm:scale-105 lg:scale-120 object-contain mx-auto max-[1040px]:sm:w-[250px] max-[680px]:sm:w-[200px]"
                       />
                     </div>
                   </div>
@@ -348,7 +348,7 @@ const Kids = () => {
       {/* FOR TOYS */}
       <div className="my-10">
         <h1 className="border-b-2 border-black mb-6 text-3xl">TOYS</h1>
-        <div className="flex justify-around">
+        <div className="flex justify-center px-1 gap-10 flex-wrap">
           {toyList.map((data) => (
             <div
               className="w-48 shadow-2xl p-2"
@@ -379,7 +379,7 @@ const Kids = () => {
         Women Watches
       </h2>
       <div
-        className="px-1 flex flex-wrap bg-gradient-to-r from-yellow-400 via-green-400 to-blue-500"
+        className="px-1 flex flex-wrap justify-center bg-gradient-to-r from-yellow-400 via-green-400 to-blue-500"
         data-aos="fade-up"
         data-aos-offset="10"
         data-aos-delay="30"
@@ -414,8 +414,8 @@ const Kids = () => {
 
       {/* FOR-BANNER */}
 
-      <div className="w-full bg-pink-200 flex p-8 mt-10">
-        <div className="flex items-center  w-[40%] " data-aos="zoom-in-right" data-aos-delay="200">
+      <div className="w-full bg-pink-200 flex p-8 mt-10  items-center gap-4 max-[650px]:flex-col">
+        <div className="flex items-center  w-[40%] max-[650px]:w-[80%]" data-aos="zoom-in-right" data-aos-delay="200">
           <span className="w-64 flex flex-col items-center">
             <img src={bannerImg1} alt="img" />
             <img src={bannerImg2} alt="img" />
@@ -426,12 +426,12 @@ const Kids = () => {
           </span>
         </div>
 
-        <div className="w-[60%] text-center flex flex-col justify-around " data-aos="fade-up" data-aos-delay="400">
-          <h1 className="text-5xl font-bold ">Upto 30% off on all Kids's Wear</h1>
+        <div className="w-[60%] text-center flex flex-col justify-around max-[650px]:w-[80%]" data-aos="fade-up" data-aos-delay="400">
+          <h1 className="text-4xl font-bold mb-2">Upto 30% off on all Kids's Wear</h1>
           <p className=" ">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum aperiam quam, sed culpa veritatis fugiat aspernatur aut. Consectetur cumque, laborum facilis eum eveniet nulla dolor rem veniam tempora dicta!</p>
-          <span className="">
+          <span className="mt-4 flex justify-center items-center max-[360px]:flex-col max-[360px]:gap-4">
             <button className="bg-sky-300 p-2 px-4 rounded-xl shadow-button-shadow font-bold  hover:scale-[0.93] transition 0.4 ease-linear ">About</button>
-            <button className="ml-10 bg-orange-300 p-2 px-4 rounded-xl shadow-button-shadow hover:scale-[0.93] transition 0.4 ease-linear">Shop Now</button>
+            <button className="ml-10 bg-orange-300 p-2 px-4 rounded-xl shadow-button-shadow hover:scale-[0.93] transition 0.4 ease-linear max-[360px]:ml-0">Shop Now</button>
           </span>
         </div>
       </div>
@@ -442,7 +442,7 @@ const Kids = () => {
         Teddy Section
       </h2>
       <div
-        className="px-1 flex flex-wrap gap-20 justify-center mt-3 bg-gradient-to-r from-orange-500 to-purple-400 via-blue-400"
+        className="px-1 flex flex-wrap gap-10 justify-center mt-3 bg-gradient-to-r from-orange-500 to-purple-400 via-blue-400"
         data-aos="fade-up"
         data-aos-offset="10"
         data-aos-delay="30"
@@ -457,7 +457,7 @@ const Kids = () => {
             data-aos="flip-left"
             data-aos-delay="400"
           >
-            <div className="w-48 h-64 bg-white shadow-xl">
+            <div className="w-48 h-64 bg-white shadow-xl max-[560px]:w-60">
               <img
                 src={data.img}
                 alt="image"

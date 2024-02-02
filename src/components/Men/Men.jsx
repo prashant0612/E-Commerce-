@@ -260,8 +260,8 @@ const Men = () => {
   };
 
   return (
-    <div className="w-full py-10 px-8 pt-20">
-      <div className="relative overflow-hidden min-h-[550px] sm:min-h-[650px] flex justify-center items-center dark:bg-gray-950 dark:text-white duration-200 bg-gradient-to-br from-pink-300 via-transparent to-blue-300">
+    <div className="w-full py-10 px-8 pt-20 max-[450px]:p-0">
+      <div className="relative overflow-hidden min-h-[550px] sm:min-h-[650px] mb-4 flex justify-center items-center dark:bg-gray-950 dark:text-white duration-200 bg-gradient-to-br from-pink-300 via-transparent to-blue-300">
         {/* background pattern */}
         {/* hero section */}
         <div className="container pb-8 sm:pb-0 p-10">
@@ -320,7 +320,7 @@ const Men = () => {
         New Products
       </h2>
       <div
-        className="px-1 flex justify-start flex-wrap bg-gradient-to-r from-orange-500 to-purple-400 via-blue-400"
+        className="px-1 flex justify-center flex-wrap bg-gradient-to-r from-orange-500 to-purple-400 via-blue-400 mb-4"
         data-aos="fade-up"
         data-aos-offset="10"
         data-aos-delay="50"
@@ -358,7 +358,7 @@ const Men = () => {
       <h2 className="border-b-2 p-1 border-gray-600 text-3xl" data-aos="fade-up">
         Special Products
       </h2>
-      <div className="flex flex-wrap bg-gradient-to-r from-yellow-400 via-green-400 to-blue-500">
+      <div className="flex flex-wrap  justify-center bg-gradient-to-r from-yellow-400 via-green-400 to-blue-500 mb-4">
         {SpecialProducList.map((data) => (
           <div
             className="p-5"
@@ -390,16 +390,16 @@ const Men = () => {
       <h2 className="border-b-2 p-1 border-gray-600 mb-5" data-aos="fade-up">
         Shoes
       </h2>
-      <div className="flex flex-wrap gap-5 justify-center" data-aos="fade-up">
+      <div className="flex flex-wrap gap-5 justify-center mb-3" data-aos="fade-up">
         {shoes_product.map((data) => (
-          <div className ="w-[38rem] h-[25rem] bg-slate-600 flex p-10 bg-[url('https://www.dropbox.com/s/fuadz3vmw2nsylm/bg.png?raw=1')] bg-cover bg-no-repeat bg-center">
-            <div className="w-full h-full flex bg-slate-700">
-              <div dir="rtl" className="w-1/2  bg-orange-500 rounded-s-[50%]">
+          <div className ="w-[38rem] h-[25rem] bg-slate-600 flex p-10 bg-[url('https://www.dropbox.com/s/fuadz3vmw2nsylm/bg.png?raw=1')] bg-cover bg-no-repeat bg-center max-[680px]:h-auto max-[3120px]:p-4">
+            <div className="w-full h-full flex bg-slate-700 max-[680px]:flex-col">
+              <div dir="rtl" className="w-1/2  bg-orange-500 rounded-s-[50%] max-[680px]:w-[100%]">
                 <div className="flex">
                   <img className="mt-2" src={data.image} alt="image" />
                 </div>
               </div>
-              <div className="w-1/2 bg-slate-700 p-5">
+              <div className="w-1/2 bg-slate-700 p-5 max-[680px]:w-[100%]">
                 <div className="flex justify-between text-center items-center">
                   <p className=" text-lg text-orange-600 font-bold ">
                     {data.name}

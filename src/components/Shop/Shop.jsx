@@ -185,7 +185,7 @@ const Shop = () => {
   };
 
   return (
-    <div className="p-10 py-0 pt-20">
+    <div className="p-10 py-0 pt-20 max-[450px]:p-0">
       {/* SLIDER-PART */}
       <div className="relative overflow-hidden min-h-[550px] sm:min-h-[650px] flex justify-center items-center dark:bg-gray-950 dark:text-white duration-200 mb-10 bg-gradient-to-br from-pink-300 via-transparent to-blue-300">
         {/* background pattern */}
@@ -252,7 +252,7 @@ const Shop = () => {
         </p>
         <div className="flex flex-wrap justify-around ">
           {WomenProduct.map((data) => (
-            <div className="mb-5 p-4 shadow-xl cursor-pointer hover:scale-[1.04] transition 0.3s ease-linear">
+            <div className="mb-6 p-4 shadow-xl cursor-pointer hover:scale-[1.04] transition 0.3s ease-linear">
               <div className="w-44 h-52 mb-3">
                 <img
                   src={data.img}
@@ -292,7 +292,7 @@ const Shop = () => {
         </p>
         <div className="flex justify-around flex-wrap h-auto">
           {KidsProduct.map((data) => (
-            <div className="w-48 shadow-2xl p-3 flex flex-col cursor-pointer hover:scale-[1.04] transition ease-linear">
+            <div className="w-48 shadow-2xl p-3 flex flex-col cursor-pointer hover:scale-[1.04] transition ease-linear mb-6">
               <div className="w-40 h-[70%] p-2">
                 <img src={data.img} alt="kid" className=" w-full h-full " />
               </div>
@@ -317,7 +317,7 @@ const Shop = () => {
       </div>
 
       {/* MEN-SECTION */}
-      <div className="">
+      <div className="mb-8">
         <p className="text-yellow-500 text-center">
           Top Rated Products for you
         </p>
@@ -359,11 +359,11 @@ const Shop = () => {
       </div>
 
       {/* Winter-Sale */}
-      <div className="w-full flex p-10 justify-around">
-        <div className="w-[25%] h-72 shadow-3xl ">
+      <div className="w-full flex p-10 justify-around max-[950px]:p-0 max-[600px]:flex-col max-[600px]:items-center max-[600px]:p-0 max-[600px]:mb-6">
+        <div className="w-[25%] h-72 shadow-3xl max-[950px]:w-[40%] max-[750px]:h-80 max-[600px]:h-60 max-[600px]:mb-8 max-[600px]:w-[50%]">
           <img src={womenImg2} alt="img" className="w-full h-full" />
         </div>
-        <div className="w-[45%]">
+        <div className="w-[45%] max-[600px]:w-[60%]">
           <h1 className="text-2xl font-bold">Winter Sale upto 50% Off</h1>
           <p>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos

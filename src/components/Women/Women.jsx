@@ -408,7 +408,7 @@ const Women = () => {
   };
 
   return (
-    <div className="w-full py-10 px-8 pt-20 ">
+    <div className="w-full py-10 px-8 pt-20 max-[450px]:p-0">
       <div className="relative overflow-hidden min-h-[550px] sm:min-h-[650px] flex justify-center items-center dark:bg-gray-950 dark:text-white duration-200 bg-gradient-to-br from-pink-300 via-transparent to-blue-300">
         {/* background pattern */}
         {/* hero section */}
@@ -423,7 +423,7 @@ const Women = () => {
                       data-aos="zoom-out"
                       data-aos-duration="500"
                       data-aos-once="true"
-                      className="text-5xl sm:text-6xl lg:text-7xl font-bold"
+                      className="text-5xl sm:text-5xl lg:text-7xl font-bold "
                     >
                       {data.title}
                     </h1>
@@ -451,7 +451,7 @@ const Women = () => {
                       <img
                         src={data.img}
                         alt=""
-                        className="w-[300px] h-[300px] sm:h-[450px] sm:w-[450px] sm:scale-105 lg:scale-120 object-contain mx-auto"
+                        className="w-[300px] h-[300px] sm:h-[350px] sm:w-[350px] sm:scale-105 lg:scale-120 object-contain mx-auto max-[1040px]:sm:w-[250px] max-[680px]:sm:w-[200px] "
                       />
                     </div>
                   </div>
@@ -468,7 +468,7 @@ const Women = () => {
         Women Dress
       </h2>
       <div
-        className="px-1 flex justify-between flex-wrap bg-gradient-to-r from-yellow-400 via-green-400 to-blue-500"
+        className="px-1 flex justify-center flex-wrap bg-gradient-to-r from-yellow-400 via-green-400 to-blue-500"
         data-aos="fade-up"
         data-aos-offset="10"
         data-aos-delay="50"
@@ -506,7 +506,7 @@ const Women = () => {
       <h2 className="border-b-2 p-1 border-gray-600 mt-8 text-3xl" data-aos="fade-up">
         Women Footwear
       </h2>
-      <div className="flex flex-wrap justify-between bg-gradient-to-r from-orange-500 via-purple-400 to-blue-300">
+      <div className="flex flex-wrap justify-center bg-gradient-to-r from-orange-500 via-purple-400 to-blue-300">
         {womenFootwearList.map((data) => (
           <div
             className="p-5"
@@ -540,7 +540,7 @@ const Women = () => {
         Women Handbags
       </h2>
       <div
-        className="px-1 flex justify-between flex-wrap gap-6 bg-gradient-to-r from-orange-500 to-purple-400 via-blue-400 "
+        className="px-1 flex justify-center flex-wrap gap-6 bg-gradient-to-r from-orange-500 to-purple-400 via-blue-400 "
         data-aos="fade-up"
         data-aos-offset="10"
         data-aos-delay="50"
@@ -586,7 +586,7 @@ const Women = () => {
         data-aos-anchor-placement="top-center"
       >
         {makeupList.map((data) => (
-          <div className="">
+          <div className="mb-4">
             <img
               src={data.img}
               alt="image"
@@ -601,7 +601,7 @@ const Women = () => {
       <h2 className="border-b-2 p-1 mt-8 border-gray-600 text-3xl" data-aos="fade-up">
         Women Sweaters
       </h2>
-      <div className="flex flex-wrap justify-between bg-gradient-to-r from-orange-500 via-purple-400 to-cyan-400">
+      <div className="flex flex-wrap justify-center bg-gradient-to-r from-orange-500 via-purple-400 to-cyan-400">
         {womenSweatersList.map((data) => (
           <div
             className="p-5"
@@ -635,7 +635,7 @@ const Women = () => {
         Women Watches
       </h2>
       <div
-        className="px-1 flex flex-wrap justify-between bg-gradient-to-r from-yellow-400 via-green-400 to-blue-500"
+        className="px-1 flex flex-wrap justify-center bg-gradient-to-r from-yellow-400 via-green-400 to-blue-500"
         data-aos="fade-up"
         data-aos-offset="10"
         data-aos-delay="30"
@@ -670,10 +670,10 @@ const Women = () => {
 
       {/* last section */}
 
-      <div className=" mt-20 flex justify-around bg-gradient-to-br from-pink-300 via-transparent to-blue-300 p-10">
-        <div className="w-[350px] shadow-2xl p-4 bg-white " data-aos="fade-left" data-aos-delay="200">
+      <div className=" mt-20 flex justify-around items-center bg-gradient-to-br from-pink-300 via-transparent to-blue-300 p-10 max-[1230px]:flex-col max-[1230px]:gap-6 ">
+        <div className="w-[350px] shadow-2xl p-4 bg-white max-[1230px]:w-[80%]" data-aos="fade-left" data-aos-delay="200">
           <h1 className="text-2xl">30% sale | Jewellery</h1>
-          <div className="mt-4 flex flex-wrap justify-around gap-16">
+          <div className="mt-4 flex flex-wrap justify-around gap-16 ">
             {jewelleryList.map((data) => (
               <div>
                 <img
@@ -688,7 +688,7 @@ const Women = () => {
         </div>
         
 
-        <div className="w-[350px] shadow-2xl p-4 bg-white " data-aos="fade-up" data-aos-delay="500">
+        <div className="w-[350px] shadow-2xl p-4 bg-white max-[1230px]:w-[80%]" data-aos="fade-up" data-aos-delay="500">
           <h1 className="text-2xl">50% sale | Spectacles</h1>
           <div className="mt-4 flex flex-wrap justify-around gap-16">
             {spectList.map((data) => (
@@ -704,7 +704,7 @@ const Women = () => {
           </div>
         </div>
 
-        <div className="w-[350px] shadow-2xl p-4 bg-white" data-aos="fade-right" data-aos-delay="800">
+        <div className="w-[350px] shadow-2xl p-4 bg-white max-[1230px]:w-[80%]" data-aos="fade-right" data-aos-delay="800">
           <h1 className="text-2xl">70% sale | Belt</h1>
           <div className="mt-4 flex flex-wrap justify-around gap-16">
             {beltList.map((data) => (
