@@ -84,26 +84,72 @@ const list = [
   }
 ];
 
-const Counter = () => {
+// const PriceCounter = (props) => {
+//   let [price, setprice] = useState(props.newprice);
+//   let [priceold, setpriceold] = useState(props.oldprice);
+//   useEffect(() => {
+    
+//   },[counter])
+  
+//   const Incrementprice = () => {
+//     setprice(price*props.count)
+//   }
+  
+//   const Decrementprice = () => {
+//     if(price>1) {
+      
+//       setprice(price - 1)
+//     }
+//   }
+//   return (
+//     <>
+//       <div className='text-[20px] line-through max-[320px]:text-[12px]'>&#8377; {props.oldprice}</div>
+//       <div className='text-[20px] max-[320px]:text-[12px]'>&#8377; {props.newprice}</div>
+//     </>
+// )
+
+// }
+
+const Counter = (props) => {
   let [counter, setCounter] = useState(1);
+  let [pricenew, setpricenew] = useState(props.newprice);
+  let [priceold, setpriceold] = useState(props.oldprice);
   
   const Increment = () => {
     setCounter(counter + 1)
+    setpricenew(pricenew+props.newprice)
+    setpriceold(priceold+props.oldprice)
   }
   
   const Decrement = () => {
-    if(counter>1) {
+    if (counter > 1) {
       
       setCounter(counter - 1)
     }
+    setpriceold(priceold - props.oldprice)
+    setpricenew(pricenew - props.newprice)
   }
   return (
     <>
-      <div className='flex gap-3 items-center'>
-        <button className='bg-white px-1 h-6 flex items-center' onClick={Decrement}>-</button>
-        <p className='w-4 text-center'>{counter}</p>
-       <button className='bg-white px-1 h-6 flex items-center' onClick={Increment}>+</button>
-      </div>
+      <div className='w-[380px] text-[20px] flex flex-col gap-3 max-[760px]:text-[16px] max-[760px]:w-[200px] max-[620px]:gap-1 max-[620px]:text-[12px] max-[440px]:w-[100px]'>
+         <h2 >{props.title}</h2>
+         <p>In Stock</p>
+         <p><b className='text-xl max-[620px]:text-[14px]'>Color: </b>{props.colorcolor}</p>
+         <div className='flex gap-12 items-center max-[760px]:flex-col max-[760px]:gap-6 max-[760px]:items-start'>
+            <div className='flex gap-3 items-center'>
+               <button className='bg-white px-1 h-6 flex items-center' onClick={Decrement}>-</button>
+               <p className='w-4 text-center'>{counter}</p>
+               <button className='bg-white px-1 h-6 flex items-center' onClick={Increment}>+</button>
+            </div>
+            <button className='bg-red-600 text-white px-3 rounded-lg shadow-sm h-10 max-[760px]:w-[100px] max-[760px]:h-[40px] max-[760px]:text-[12px] max-[320px]:px-0'>Remove From Cart</button>
+          </div>
+        </div>
+        <div className='flex flex-col gap-3 items-center '>
+             <div className='bg-red-600 text-white px-4 py-2 rounded-xl max-[320px]:px-1 max-[320px]:text-[12px]'>{props.offer}% off </div>
+             <div className='text-[20px] line-through max-[320px]:text-[12px]'>&#8377; {priceold}</div>
+             <div className='text-[20px] max-[320px]:text-[12px]'>&#8377; {pricenew}</div>
+        </div>
+      
     </>
 )
 
@@ -127,20 +173,7 @@ const Cart = () => {
           <div className='flex bg-white justify-around items-center w-[100%] bg-gradient-to-r from-yellow-400 via-green-400 to-blue-500 mt-8 py-6 px-6 max-[620px]:justify-between max-[620px]:px-2' data-aos={item.aosData}
           data-aos-delay={item.aosDelay}>
             <img src={item.img} className='w-40 h-30 max-[620px]:w-20 '></img>
-            <div className='w-[380px] text-[20px] flex flex-col gap-3 max-[760px]:text-[16px] max-[760px]:w-[200px] max-[620px]:gap-1 max-[620px]:text-[12px] max-[440px]:w-[100px]'>
-              <h2 >{item.title}</h2>
-              <p>In Stock</p>
-              <p><b className='text-xl max-[620px]:text-[14px]'>Color: </b>{item.color}</p>
-              <div className='flex gap-12 items-center max-[760px]:flex-col max-[760px]:gap-6 max-[760px]:items-start'>
-                 <Counter/>
-                <button className='bg-red-600 text-white px-3 rounded-lg shadow-sm h-10 max-[760px]:w-[100px] max-[760px]:h-[40px] max-[760px]:text-[12px] max-[320px]:px-0'>Remove From Cart</button>
-              </div>
-            </div>
-            <div className='flex flex-col gap-3 items-center '>
-              <div className='bg-red-600 text-white px-4 py-2 rounded-xl max-[320px]:px-1 max-[320px]:text-[12px]'>{item.offer}% off </div>
-              <div className='text-[20px] line-through max-[320px]:text-[12px]'>&#8377; {item.old_price}</div>
-              <div className='text-[20px] max-[320px]:text-[12px]'>&#8377; {item.new_price}</div>
-            </div>
+            <Counter title={item.title} color={item.color} newprice={item.new_price} oldprice={item.old_price} offer={item.offer} />
           </div>
         ))}
       </div>
