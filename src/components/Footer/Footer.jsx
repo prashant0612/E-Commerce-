@@ -9,11 +9,10 @@ import twitterIcon from './images/twitter.png'
 import youtubeIcon from './images/youtube.png'
 
 
-
 const Footer = () => {
   return (
-    <footer className='flex justify-evenly p-12 bg-gradient-to-r from-purple-600 via-red-500 to-yellow-300'>
-      <div className=' w-1/4 flex flex-col items-center text-center gap-1'>
+    <footer className='flex justify-evenly p-12 bg-gradient-to-r from-purple-600 via-red-500 to-yellow-300 max-[768px]:flex-wrap'>
+      <div className=' w-1/4 flex flex-col items-center text-center gap-1 max-[768px]:w-full'>
         <h1 className='font-bold'>ABOUT</h1>
         <p>Bringing quality and convenience together – your go-to destination for Products that inspire and elevate your lifestyle</p>
         <span className='flex'> 
@@ -23,7 +22,7 @@ const Footer = () => {
           <img src={visaIcon} alt='image' className=' w-16 h-14' />
         </span>
       </div>
-      <div className=' w-1/4 flex flex-col items-center text-center gap-1'>
+      <div className=' w-1/4 flex flex-col items-center text-center gap-1 max-[768px]:w-full max-[768px]:mt-5'>
         <h1 className=' font-bold'>CATEGORIES</h1>
         <ul>
           <li>Clothing</li>
@@ -33,7 +32,7 @@ const Footer = () => {
           <li>Belt</li>
         </ul>
       </div>
-      <div className=' w-1/4 flex flex-col items-center text-center gap-1'>
+      <div className=' w-1/4 flex flex-col items-center text-center gap-1 max-[768px]:w-full max-[768px]:mt-5'>
         <h1 className=' font-bold'>INFORMATION</h1>
         <ul>
           <li>About Us</li>
@@ -44,7 +43,7 @@ const Footer = () => {
           <li>Private Policy</li>
         </ul>
       </div>
-      <div className=' w-1/4 flex flex-col text-center gap-1'>
+      <div className=' w-1/4 flex flex-col text-center gap-1 max-[768px]:w-full max-[768px]:mt-5'>
         <h1 className=' font-bold'>CONTACT</h1>
         <p>XYZ, New Delhi,India<br/>Pin code - 110005</p>
         <p>+91 1234567890</p>

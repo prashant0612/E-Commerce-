@@ -185,7 +185,7 @@ const Shop = () => {
   };
 
   return (
-    <div className="p-10 py-0 pt-20 max-[450px]:p-0">
+    <div className="p-10 py-0 pt-20 max-[768px]:pt-20 max-[768px]:p-0">
       {/* SLIDER-PART */}
       <div className="relative overflow-hidden min-h-[550px] sm:min-h-[650px] flex justify-center items-center dark:bg-gray-950 dark:text-white duration-200 mb-10 bg-gradient-to-br from-pink-300 via-transparent to-blue-300">
         {/* background pattern */}
