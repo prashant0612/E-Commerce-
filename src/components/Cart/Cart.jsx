@@ -84,32 +84,6 @@ const list = [
   }
 ];
 
-// const PriceCounter = (props) => {
-//   let [price, setprice] = useState(props.newprice);
-//   let [priceold, setpriceold] = useState(props.oldprice);
-//   useEffect(() => {
-    
-//   },[counter])
-  
-//   const Incrementprice = () => {
-//     setprice(price*props.count)
-//   }
-  
-//   const Decrementprice = () => {
-//     if(price>1) {
-      
-//       setprice(price - 1)
-//     }
-//   }
-//   return (
-//     <>
-//       <div className='text-[20px] line-through max-[320px]:text-[12px]'>&#8377; {props.oldprice}</div>
-//       <div className='text-[20px] max-[320px]:text-[12px]'>&#8377; {props.newprice}</div>
-//     </>
-// )
-
-// }
-
 const Counter = (props) => {
   let [counter, setCounter] = useState(1);
   let [pricenew, setpricenew] = useState(props.newprice);
@@ -128,6 +102,7 @@ const Counter = (props) => {
     setpricenew(pricenew - props.newprice)
     }
   }
+
   return (
     <>
       <div className='w-[380px] text-[20px] flex flex-col gap-3 max-[760px]:text-[16px] max-[760px]:w-[200px] max-[620px]:gap-1 max-[620px]:text-[12px] max-[440px]:w-[100px]'>

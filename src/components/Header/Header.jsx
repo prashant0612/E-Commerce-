@@ -44,7 +44,7 @@ const Header = () => {
             Kids
           </NavLink>
         </li>
-        <Link to="/cart"> <FaCartArrowDown className='mr-10 text-2xl hidden max-[768px]:mr-0'/></Link>
+        <Link to="/cart"> <FaCartArrowDown className='mr-10 text-2xl hidden max-[768px]:mr-0 max-[768px]:block'/></Link>
       </ul>
       <div className='flex items-center'>
         <Link to= "/login"> <button className=' mr-12 bg-red-600 p-2 px-5 rounded-2xl text-white font-bold max-[768px]:hidden'>Login</button></Link>
