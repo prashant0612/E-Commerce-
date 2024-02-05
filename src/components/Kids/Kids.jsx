@@ -291,7 +291,7 @@ const Kids = () => {
   };
 
   return (
-    <div className="w-full py-10 px-8 pt-20 max-[768px]:p-0 max-[768px]:pt-20">
+    <div className="w-full py-10 px-8 pt-20 max-[768px]:p-0 max-[768px]:pt-20 overflow-hidden">
       <div className="relative overflow-hidden min-h-[550px] sm:min-h-[650px]  flex justify-center items-center dark:bg-gray-950 dark:text-white duration-200 bg-gradient-to-br from-pink-300 via-transparent to-blue-300">
         {/* background pattern */}
         {/* hero section */}

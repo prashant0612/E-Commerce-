@@ -408,7 +408,7 @@ const Women = () => {
   };
 
   return (
-    <div className="w-full py-10 px-8 pt-20 max-[768px]:p-0 max-[768px]:pt-20">
+    <div className="w-full py-10 px-8 pt-20 max-[768px]:p-0 max-[768px]:pt-20 overflow-hidden">
       <div className="relative overflow-hidden min-h-[550px] sm:min-h-[650px] flex justify-center items-center dark:bg-gray-950 dark:text-white duration-200 bg-gradient-to-br from-pink-300 via-transparent to-blue-300">
         {/* background pattern */}
         {/* hero section */}
@@ -451,7 +451,7 @@ const Women = () => {
                       <img
                         src={data.img}
                         alt=""
-                        className="w-[300px] h-[300px] sm:h-[350px] sm:w-[350px] sm:scale-105 lg:scale-120 object-contain mx-auto max-[1040px]:sm:w-[250px] max-[680px]:sm:w-[200px] "
+                        className="w-[300px] h-[300px] sm:h-[350px] sm:w-[350px] sm:scale-105 lg:scale-120 object-contain mx-auto"
                       />
                     </div>
                   </div>

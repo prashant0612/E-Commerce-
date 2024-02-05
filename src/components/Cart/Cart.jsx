@@ -134,7 +134,7 @@ const Cart = () => {
 
   return (
     
-    <div className='pt-[130px] pb-[40px] px-6 max-[620px]:px-0'>
+    <div className='pt-[130px] pb-[40px] px-6 max-[620px]:px-0 overflow-hidden'>
       <h1 className='text-4xl text-orange-500 font-bold pb-4'>Shopping Cart</h1>
       <div data-aos="fade-up"
         data-aos-offset="10"
