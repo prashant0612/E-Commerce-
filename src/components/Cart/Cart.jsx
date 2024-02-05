@@ -116,18 +116,17 @@ const Counter = (props) => {
   let [priceold, setpriceold] = useState(props.oldprice);
   
   const Increment = () => {
-    setCounter(counter + 1)
-    setpricenew(pricenew+props.newprice)
-    setpriceold(priceold+props.oldprice)
-  }
+    setCounter(counter + 1);
+    setpricenew(pricenew + props.newprice);
+    setpriceold(priceold + props.oldprice);
+  };
   
   const Decrement = () => {
     if (counter > 1) {
-      
-      setCounter(counter - 1)
-    }
+    setCounter(counter - 1)
     setpriceold(priceold - props.oldprice)
     setpricenew(pricenew - props.newprice)
+    }
   }
   return (
     <>
