@@ -29,10 +29,11 @@ import kidImg6 from "./images/kids/kid-img6.jpg";
 import tshirt from "./images/tshirt/shirt.png";
 import tshirt2 from "./images/tshirt/shirt2.png";
 import tshirt3 from "./images/tshirt/shirt3.png";
+import { Link } from "react-router-dom";
 
 const WomenProduct = [
   {
-    id: 1,
+    id: 27,
     img: womenImg1,
     title: "Women Ethnic",
     rating: 5.0,
@@ -40,7 +41,7 @@ const WomenProduct = [
     aosDelay: "0",
   },
   {
-    id: 2,
+    id: 28,
     img: womenImg2,
     title: "Women western",
     rating: 5.0,
@@ -48,7 +49,7 @@ const WomenProduct = [
     aosDelay: "0",
   },
   {
-    id: 3,
+    id: 29,
     img: womenImg3,
     title: "Goggles",
     rating: 5.0,
@@ -56,7 +57,7 @@ const WomenProduct = [
     aosDelay: "0",
   },
   {
-    id: 4,
+    id: 30,
     img: womenImg4,
     title: "Printed T-shirt",
     rating: 5.0,
@@ -64,7 +65,7 @@ const WomenProduct = [
     aosDelay: "0",
   },
   {
-    id: 5,
+    id: 31,
     img: womenImg2,
     title: "Printed T-shirt",
     rating: 5.0,
@@ -73,43 +74,50 @@ const WomenProduct = [
   },
 ];
 
+
+export const WomenProductList = WomenProduct;
+
+
 const KidsProduct = [
   {
-    id: 1,
+    id: 22,
     img: kidImg1,
     star: "⭐⭐⭐⭐",
     name: "Product 1",
     price: 454,
   },
   {
-    id: 2,
+    id: 23,
     img: kidImg6,
     star: "⭐⭐⭐",
     name: "Product 2",
     price: 712,
   },
   {
-    id: 3,
+    id: 24,
     img: kidImg3,
     star: "⭐⭐⭐⭐⭐",
     name: "Product 3",
     price: 534,
   },
   {
-    id: 4,
+    id: 25,
     img: kidImg4,
     star: "⭐⭐⭐",
     name: "Product 4",
     price: 626,
   },
   {
-    id: 5,
+    id: 26,
     img: kidImg5,
     star: "⭐⭐⭐⭐",
     name: "Product 5",
     price: 804,
   },
 ];
+
+export const KidsProductList = KidsProduct; 
+
 
 const ImageList = [
   {
@@ -151,24 +159,25 @@ const ImageList = [
 
 const MenProducts = [
   {
-    id: 1,
+    id: 19,
     img: tshirt,
     title: "Casual Wear",
     description: "Lorem ipsum dolor, sit amet consectetur adipisicing.",
   },
   {
-    id: 2,
+    id: 20,
     img: tshirt2,
     title: "Printed Shirt",
     description: "Lorem ipsum dolor, sit amet consectetur adipisicing.",
   },
   {
-    id: 3,
+    id: 21,
     img: tshirt3,
     title: "Women Wear",
     description: "Lorem ipsum dolor, sit amet consectetur adipisicing.",
   },
 ];
+export const MenProductListAll = MenProducts;
 
 const Shop = () => {
   var settings = {
@@ -252,7 +261,7 @@ const Shop = () => {
         </p>
         <div className="flex flex-wrap justify-around ">
           {WomenProduct.map((data) => (
-            <div className="mb-6 p-4 shadow-xl cursor-pointer hover:scale-[1.04] transition 0.3s ease-linear">
+            <Link to={`/singlePage/${data.id}`} className="mb-6 p-4 shadow-xl cursor-pointer hover:scale-[1.04] transition 0.3s ease-linear">
               <div className="w-44 h-52 mb-3">
                 <img
                   src={data.img}
@@ -271,7 +280,7 @@ const Shop = () => {
                   Add to Cart
                 </button>
               </span>
-            </div>
+            </Link>
           ))}
         </div>
         <div className="flex justify-center text-center mt-3">
@@ -292,7 +301,7 @@ const Shop = () => {
         </p>
         <div className="flex justify-around flex-wrap h-auto">
           {KidsProduct.map((data) => (
-            <div className="w-48 shadow-2xl p-3 flex flex-col cursor-pointer hover:scale-[1.04] transition ease-linear mb-6">
+            <Link to={`/singlePage/${data.id}`} className="w-48 shadow-2xl p-3 flex flex-col cursor-pointer hover:scale-[1.04] transition ease-linear mb-6">
               <div className="w-40 h-[70%] p-2">
                 <img src={data.img} alt="kid" className=" w-full h-full " />
               </div>
@@ -311,7 +320,7 @@ const Shop = () => {
                   </button>
                 </div>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </div>
@@ -328,7 +337,7 @@ const Shop = () => {
 
         <div className="flex justify-around flex-wrap">
           {MenProducts.map((data) => (
-            <div className="w-72  flex flex-col mb-8 relative mt-32  rounded-2xl shadow-2xl cursor-pointer group ">
+            <Link to={`/singlePage/${data.id}`} className="w-72  flex flex-col mb-8 relative mt-32  rounded-2xl shadow-2xl cursor-pointer group ">
               <div className="bg-white flex w-full justify-center items-center group-hover:scale-[1.1] transition duration-150">
                 <img
                   src={data.img}
@@ -353,7 +362,7 @@ const Shop = () => {
                   Order Now
                 </button>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </div>

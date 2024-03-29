@@ -40,6 +40,7 @@ import shoe5 from "./image/shoes/shoe5.png";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { Link } from "react-router-dom";
 
 const ImageList = [
   {
@@ -124,9 +125,11 @@ const ProductList = [
   },
 ];
 
+export const ProductListAll = ProductList;
+
 const SpecialProducList = [
   {
-    id: 1,
+    id: 9,
     img: SpecialProductImg1,
     title: "Lorem ipsum dolor sit amet.",
     old_price: "$120",
@@ -134,7 +137,7 @@ const SpecialProducList = [
     aosDelay: "0",
   },
   {
-    id: 2,
+    id: 10,
     img: SpecialProductImg2,
     title: "Lorem ipsum dolor sit amet.",
     old_price: "$120",
@@ -142,7 +145,7 @@ const SpecialProducList = [
     aosDelay: "200",
   },
   {
-    id: 3,
+    id: 11,
     img: SpecialProductImg3,
     title: "Lorem ipsum dolor sit amet.",
     old_price: "$120",
@@ -150,7 +153,7 @@ const SpecialProducList = [
     aosDelay: "400",
   },
   {
-    id: 4,
+    id: 12,
     img: SpecialProductImg4,
     title: "Lorem ipsum dolor sit amet.",
     old_price: "$120",
@@ -158,7 +161,7 @@ const SpecialProducList = [
     aosDelay: "800",
   },
   {
-    id: 5,
+    id: 13,
     img: SpecialProductImg5,
     title: "Lorem ipsum dolor sit amet.",
     old_price: "$120",
@@ -166,7 +169,7 @@ const SpecialProducList = [
     aosDelay: "1000",
   },
   {
-    id: 6,
+    id: 14,
     img: SpecialProductImg6,
     title: "Lorem ipsum dolor sit amet.",
     old_price: "$120",
@@ -174,7 +177,7 @@ const SpecialProducList = [
     aosDelay: "1200",
   },
   {
-    id: 7,
+    id: 15,
     img: SpecialProductImg7,
     title: "Lorem ipsum dolor sit amet.",
     old_price: "$120",
@@ -182,7 +185,7 @@ const SpecialProducList = [
     aosDelay: "1400",
   },
   {
-    id: 8,
+    id: 16,
     img: SpecialProductImg8,
     title: "Lorem ipsum dolor sit amet.",
     old_price: "$120",
@@ -190,7 +193,7 @@ const SpecialProducList = [
     aosDelay: "1600",
   },
   {
-    id: 9,
+    id: 17,
     img: SpecialProductImg9,
     title: "Lorem ipsum dolor sit amet.",
     old_price: "$120",
@@ -198,7 +201,7 @@ const SpecialProducList = [
     aosDelay: "1800",
   },
   {
-    id: 10,
+    id: 18,
     img: SpecialProductImg10,
     title: "Lorem ipsum dolor sit amet.",
     old_price: "$120",
@@ -206,6 +209,9 @@ const SpecialProducList = [
     aosDelay: "2000",
   },
 ];
+
+export const SpecialProductListAll = SpecialProducList;
+
 
 const shoes_product = [
   {
@@ -250,7 +256,7 @@ const Men = () => {
     dots: false,
     arrows: false,
     infinite: true,
-    speed: 800,
+    speed: 800,  
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 4000,
@@ -335,7 +341,7 @@ const Men = () => {
             data-aos="fade-up"
             data-aos-delay={data.aosDelay}
           >
-            <div className="w-48 h-64 bg-slate-100">
+            <Link className="w-48 h-64 bg-slate-100 " to={`/singlePage/${data.id}`}>
               <img
                 src={data.img}
                 alt="image"
@@ -348,7 +354,7 @@ const Men = () => {
                   <FaShoppingCart /> Add to cart
                 </button>
               </div>
-            </div>
+            </Link>
           </div>
         ))}
       </div>
@@ -365,7 +371,7 @@ const Men = () => {
             data-aos="fade-up"
             data-aos-delay={data.aosDelay}
           >
-            <div className="w-48 h-64 bg-slate-100">
+            <Link className="w-48 h-64 bg-slate-100" to={`/singlePage/${data.id}`}>
               <img
                 src={data.img}
                 alt="image"
@@ -381,7 +387,7 @@ const Men = () => {
                   <FaShoppingCart /> Add to cart
                 </button>
               </div>
-            </div>
+            </Link>
           </div>
         ))}
       </div>

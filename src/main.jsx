@@ -9,6 +9,7 @@ import Women from './components/Women/Women.jsx'
 import Kids from './components/Kids/Kids.jsx'
 import Login from './components/Login/Login.jsx'
 import Cart from './components/Cart/Cart.jsx' 
+import SingleProductPage from './components/SingleProductPage/SingleProductPage.jsx'
 
 
 const router = createBrowserRouter([
@@ -16,6 +17,7 @@ const router = createBrowserRouter([
     path:'login',
     element:<Login/>
   },
+  
   {
     path: '/',
     element:<Layout />,
@@ -39,6 +41,10 @@ const router = createBrowserRouter([
       {
         path:'Cart',
         element:<Cart />
+      },
+      {
+        path:'/singlePage/:productId',
+        element:<SingleProductPage/>
       }
     ]
   }

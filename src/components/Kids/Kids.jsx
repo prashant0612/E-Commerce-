@@ -44,6 +44,7 @@ import teddyImg4 from "./Images/teddy/teddyImg4.jpg";
 import teddyImg5 from "./Images/teddy/teddyImg5.jpg";
 import teddyImg6 from "./Images/teddy/teddyImg6.jpg";
 import teddyImg7 from "./Images/teddy/teddyImg7.jpg";
+import { Link } from "react-router-dom";
 
 const ImageList = [
   {
@@ -71,46 +72,48 @@ const ImageList = [
 
 const toyList = [
   {
-    id: 1,
+    id: 71,
     img: toyImg1,
     title: "Toy Product 1",
     price: 282,
   },
   {
-    id: 2,
+    id: 72,
     img: toyImg2,
     title: "Toy Product 2",
     price: 512,
   },
   {
-    id: 3,
+    id: 73,
     img: toyImg3,
     title: "Toy Product 3",
     price: 702,
   },
   {
-    id: 4,
+    id: 74,
     img: toyImg4,
     title: "Toy Product 4",
     price: 414,
   },
   {
-    id: 5,
+    id: 75,
     img: toyImg5,
     title: "Toy Product 5",
     price: 596,
   },
   {
-    id: 6,
+    id: 76,
     img: toyImg6,
     title: "Toy Product 6",
     price: 385,
   },
 ];
 
+export const toyListAll = toyList;
+
 const costumeList = [
   {
-    id: 1,
+    id: 77,
     img: kidImg1,
     title: "costume1",
     price: 320,
@@ -118,7 +121,7 @@ const costumeList = [
     transition: "fade-down",
   },
   {
-    id: 2,
+    id: 78,
     img: kidImg2,
     title: "costume2",
     price: 520,
@@ -126,7 +129,7 @@ const costumeList = [
     transition: "flip-down",
   },
   {
-    id: 3,
+    id: 79,
     img: kidImg3,
     title: "costume3",
     price: 512,
@@ -134,7 +137,7 @@ const costumeList = [
     transition: "zoom-in-up",
   },
   {
-    id: 4,
+    id: 80,
     img: kidImg4,
     title: "costume4",
     price: 641,
@@ -142,7 +145,7 @@ const costumeList = [
     transition: "fade-left",
   },
   {
-    id: 5,
+    id: 81,
     img: kidImg5,
     title: "costume5",
     price: 520,
@@ -150,7 +153,7 @@ const costumeList = [
     transition: "zoom-out-up",
   },
   {
-    id: 6,
+    id: 82,
     img: kidImg6,
     title: "costume6",
     price: 742,
@@ -158,7 +161,7 @@ const costumeList = [
     transition: "flip-left",
   },
   {
-    id: 7,
+    id: 83,
     img: kidImg7,
     title: "costume7",
     price: 699,
@@ -166,7 +169,7 @@ const costumeList = [
     transition: "fade-right",
   },
   {
-    id: 8,
+    id: 84,
     img: kidImg8,
     title: "costume8",
     price: 450,
@@ -174,7 +177,7 @@ const costumeList = [
     transition: "zoom-in-up",
   },
   {
-    id: 9,
+    id: 85,
     img: kidImg9,
     title: "costume9",
     price: 597,
@@ -182,7 +185,7 @@ const costumeList = [
     transition: "fade-down-right",
   },
   {
-    id: 10,
+    id: 86,
     img: kidImg10,
     title: "costume10",
     price: 432,
@@ -190,7 +193,7 @@ const costumeList = [
     transition: "zoom-in",
   },
   {
-    id: 11,
+    id: 87,
     img: kidImg11,
     title: "costume11",
     price: 612,
@@ -198,7 +201,7 @@ const costumeList = [
     transition: "fade-up",
   },
   {
-    id: 12,
+    id: 88,
     img: kidImg12,
     title: "costume12",
     price: 512,
@@ -206,7 +209,7 @@ const costumeList = [
     transition: "flip-down",
   },
   {
-    id: 13,
+    id: 89,
     img: kidImg13,
     title: "costume13",
     price: 699,
@@ -214,7 +217,7 @@ const costumeList = [
     transition: "flip-left",
   },
   {
-    id: 14,
+    id: 90,
     img: kidImg14,
     title: "costume14",
     price: 475,
@@ -222,7 +225,7 @@ const costumeList = [
     transition: "zoom-out-right",
   },
   {
-    id: 15,
+    id: 91,
     img: kidImg15,
     title: "costume15",
     price: 498,
@@ -231,50 +234,54 @@ const costumeList = [
   },
 ];
 
+export const costumeListAll = costumeList;
+
 const teddyList =[
   {
-    id:1,
+    id:92,
     img:teddyImg1,
     title:"Teddy1",
     price:454
   },
   {
-    id:2,
+    id:93,
     img:teddyImg2,
     title:"Teddy3",
     price:504
   },
   {
-    id:3,
+    id:94,
     img:teddyImg3,
     title:"Teddy3",
     price:672
   },
   {
-    id:4,
+    id:95,
     img:teddyImg4,
     title:"Teddy4",
     price:642
   },
   {
-    id:5,
+    id:96,
     img:teddyImg5,
     title:"Teddy5",
     price:714
   },
   {
-    id:6,
+    id:97,
     img:teddyImg6,
     title:"Teddy6",
     price:767
   },
   {
-    id:7,
+    id:98,
     img:teddyImg7,
     title:"Teddy7",
     price:702
   },
 ]
+
+export const teddyListAll = teddyList;
 
 const Kids = () => {
   var settings = {
@@ -350,7 +357,7 @@ const Kids = () => {
         <h1 className="border-b-2 border-black mb-6 text-3xl">TOYS</h1>
         <div className="flex justify-center px-1 gap-10 flex-wrap">
           {toyList.map((data) => (
-            <div
+            <Link to={`/singlePage/${data.id}`}
               className="w-48 shadow-2xl p-2"
               data-aos="flip-down"
               data-aos-delay="200"
@@ -368,7 +375,7 @@ const Kids = () => {
                   Add to Cart
                 </button>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </div>
@@ -376,7 +383,7 @@ const Kids = () => {
       {/* COSTUMES */}
 
       <h2 className="p-1 border-b-2 border-gray-500 mt-8 text-3xl" data-aos="fade-up">
-        Women Watches
+        Kids Costume
       </h2>
       <div
         className="px-1 flex flex-wrap justify-center bg-gradient-to-r from-yellow-400 via-green-400 to-blue-500"
@@ -389,7 +396,7 @@ const Kids = () => {
         data-aos-anchor-placement="top-center"
       >
         {costumeList.map((data) => (
-          <div
+          <Link to={`/singlePage/${data.id}`}
             className="p-5 mb-5"
             data-aos={data.transition}
             data-aos-delay={data.aosDelay}
@@ -408,7 +415,7 @@ const Kids = () => {
                 </button>
               </div>
             </div>
-          </div>
+          </Link>
         ))}
       </div>
 
@@ -452,7 +459,7 @@ const Kids = () => {
         data-aos-anchor-placement="top-center"
       >
         {teddyList.map((data) => (
-          <div
+          <Link to={`/singlePage/${data.id}`}
             className="p-5 mb-5 "
             data-aos="flip-left"
             data-aos-delay="400"
@@ -471,7 +478,7 @@ const Kids = () => {
                 </button>
               </div>
             </div>
-          </div>
+          </Link>
         ))}
       </div>
 

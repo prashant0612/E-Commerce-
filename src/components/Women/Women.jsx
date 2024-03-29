@@ -64,6 +64,7 @@ import beltImg3 from "./images/women_belt/beltImg3.jpg";
 import beltImg4 from "./images/women_belt/beltImg4.jpg";
 
 import { FaShoppingCart } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const ImageList = [
   {
@@ -91,35 +92,35 @@ const ImageList = [
 
 const WomenDressList = [
   {
-    id: 1,
+    id: 27,
     img: dressImg1,
     title: "Lorem ipsum dolor",
     price: "$100",
     aosDelay: "0",
   },
   {
-    id: 2,
+    id: 28,
     img: dressImg2,
     title: "Lorem ipsum dolor",
     price: "$120",
     aosDelay: "200",
   },
   {
-    id: 3,
+    id: 29,
     img: dressImg3,
     title: "Lorem ipsum dolor",
     price: "$130",
     aosDelay: "400",
   },
   {
-    id: 4,
+    id: 30,
     img: dressImg4,
     title: "Lorem ipsum dolor",
     price: "$90",
     aosDelay: "600",
   },
   {
-    id: 5,
+    id: 31,
     img: dressImg5,
     title: "Lorem ipsum dolor",
     price: "$200",
@@ -127,9 +128,11 @@ const WomenDressList = [
   },
 ];
 
+export const WomenDressListAll = WomenDressList;
+
 const womenFootwearList = [
   {
-    id: 1,
+    id: 32,
     img: footwearImg1,
     title: "Lorem ipsum dolor sit amet.",
     old_price: "$120",
@@ -137,7 +140,7 @@ const womenFootwearList = [
     aosDelay: "0",
   },
   {
-    id: 2,
+    id: 33,
     img: footwearImg2,
     title: "Lorem ipsum dolor sit amet.",
     old_price: "$120",
@@ -145,7 +148,7 @@ const womenFootwearList = [
     aosDelay: "200",
   },
   {
-    id: 3,
+    id: 34,
     img: footwearImg3,
     title: "Lorem ipsum dolor sit amet.",
     old_price: "$120",
@@ -153,7 +156,7 @@ const womenFootwearList = [
     aosDelay: "400",
   },
   {
-    id: 4,
+    id: 35,
     img: footwearImg4,
     title: "Lorem ipsum dolor sit amet.",
     old_price: "$120",
@@ -161,7 +164,7 @@ const womenFootwearList = [
     aosDelay: "800",
   },
   {
-    id: 5,
+    id: 36,
     img: footwearImg5,
     title: "Lorem ipsum dolor sit amet.",
     old_price: "$120",
@@ -169,46 +172,52 @@ const womenFootwearList = [
     aosDelay: "1000",
   },
 ];
+
+export const WomenFootwearListAll = womenFootwearList;
+
 const womenHandbagsList = [
   {
-    id: 1,
+    id: 37,
     img: handbagsImg1,
     title: "Lorem ipsum dolor sit amet.",
     price: "$100",
     aosDelay: "0",
   },
   {
-    id: 2,
+    id: 38,
     img: handbagsImg2,
     title: "Lorem ipsum dolor sit amet.",
     price: "$200",
     aosDelay: "200",
   },
   {
-    id: 3,
+    id: 39,
     img: handbagsImg3,
     title: "Lorem ipsum dolor sit amet.",
     price: "$120",
     aosDelay: "400",
   },
   {
-    id: 4,
+    id: 40,
     img: handbagsImg4,
     title: "Lorem ipsum dolor sit amet.",
     price: "$120",
     aosDelay: "800",
   },
   {
-    id: 5,
+    id: 41,
     img: handbagsImg5,
     title: "Lorem ipsum dolor sit amet.",
     price: "$120",
     aosDelay: "1000",
   },
 ];
+
+export const WomenHandbagsListAll = womenHandbagsList;
+
 const womenSweatersList = [
   {
-    id: 1,
+    id: 42,
     img: sweaterImg1,
     title: "Lorem ipsum dolor sit amet.",
     old_price: "$120",
@@ -216,7 +225,7 @@ const womenSweatersList = [
     aosDelay: "0",
   },
   {
-    id: 2,
+    id: 43,
     img: sweaterImg2,
     title: "Lorem ipsum dolor sit amet.",
     old_price: "$120",
@@ -224,7 +233,7 @@ const womenSweatersList = [
     aosDelay: "200",
   },
   {
-    id: 3,
+    id: 44,
     img: sweaterImg3,
     title: "Lorem ipsum dolor sit amet.",
     old_price: "$120",
@@ -232,7 +241,7 @@ const womenSweatersList = [
     aosDelay: "400",
   },
   {
-    id: 4,
+    id: 45,
     img: sweaterImg4,
     title: "Lorem ipsum dolor sit amet.",
     old_price: "$120",
@@ -240,7 +249,7 @@ const womenSweatersList = [
     aosDelay: "800",
   },
   {
-    id: 5,
+    id: 46,
     img: sweaterImg5,
     title: "Lorem ipsum dolor sit amet.",
     old_price: "$120",
@@ -248,37 +257,40 @@ const womenSweatersList = [
     aosDelay: "1000",
   },
 ];
+
+export const WomenSweatersListAll = womenSweatersList ;
+
 const womenWatchesList = [
   {
-    id: 1,
+    id: 47,
     img: watchesImg1,
     title: "Lorem ipsum dolor sit amet.",
     price: "$120",
     aosDelay: "0",
   },
   {
-    id: 2,
+    id: 48,
     img: watchesImg2,
     title: "Lorem ipsum dolor sit amet.",
     price: "$100",
     aosDelay: "200",
   },
   {
-    id: 3,
+    id: 49,
     img: watchesImg3,
     title: "Lorem ipsum dolor sit amet.",
     price: "$140",
     aosDelay: "400",
   },
   {
-    id: 4,
+    id: 50,
     img: watchesImg4,
     title: "Lorem ipsum dolor sit amet.",
     price: "$120",
     aosDelay: "800",
   },
   {
-    id: 5,
+    id: 51,
     img: watchesImg5,
     title: "Lorem ipsum dolor sit amet.",
     price: "$100",
@@ -286,112 +298,122 @@ const womenWatchesList = [
   },
 ];
 
+export const WomenWatchesListAll = womenWatchesList;
+
 const makeupList = [
   {
-    id: 1,
+    id: 52,
     img: makeupImg1,
     title: "Lorem ipsum dolor sit amet.",
   },
   {
-    id: 2,
+    id: 53,
     img: makeupImg2,
     title: "Lorem ipsum dolor sit amet.",
   },
   {
-    id: 3,
+    id: 54,
     img: makeupImg3,
     title: "Lorem ipsum dolor sit amet.",
   },
   {
-    id: 4,
+    id: 55,
     img: makeupImg4,
     title: "Lorem ipsum dolor sit amet.",
   },
   {
-    id: 5,
+    id: 56,
     img: makeupImg5,
     title: "Lorem ipsum dolor sit amet.",
   },
   {
-    id: 6,
+    id: 57,
     img: makeupImg6,
     title: "Lorem ipsum dolor sit amet.",
   },
   {
-    id: 7,
+    id: 58,
     img: makeupImg7,
     title: "Lorem ipsum dolor sit amet.",
   },
 ];
 
+export const MakeupListAll = makeupList;
+
 const jewelleryList = [
   {
-    id: 1,
+    id: 59,
     img: jewelleryImg1,
     title: "Jewellery",
   },
   {
-    id: 2,
+    id: 60,
     img: jewelleryImg2,
     title: "Jewellery",
   },
   {
-    id: 3,
+    id: 61,
     img: jewelleryImg3,
     title: "Jewellery",
   },
   {
-    id: 4,
+    id: 62,
     img: jewelleryImg4,
     title: "Jewellery",
   },
 ];
 
+export const JewelleryListAll = jewelleryList;
+
 const spectList = [
   {
-    id: 1,
+    id: 63,
     img:spectImg1,
     title: "Spect",
   },
   {
-    id: 2,
+    id: 64,
     img:spectImg2,
     title: "Spect",
   },
   {
-    id: 3,
+    id: 65,
     img:spectImg3,
     title: "Spect",
   },
   {
-    id: 4,
+    id: 66,
     img:spectImg4,
     title: "Spect",
   }
 ];
 
+export const SpectListAll = spectList;
+
 const beltList =[
   {
-    id:1,
+    id:67,
     img:beltImg1,
     title:"Belt"
   },
   {
-    id:2,
+    id:68,
     img:beltImg2,
     title:"Belt"
   },
   {
-    id:3,
+    id:69,
     img:beltImg3,
     title:"Belt"
   },
   {
-    id:4,
+    id:70,
     img:beltImg4,
     title:"Belt"
   },
 ];
+
+export const BeltListAll = beltList;
 
 const Women = () => {
   var settings = {
@@ -478,7 +500,7 @@ const Women = () => {
         data-aos-anchor-placement="top-center"
       >
         {WomenDressList.map((data) => (
-          <div
+          <Link to={`/singlePage/${data.id}`}
             className="p-5"
             data-aos="fade-up"
             data-aos-delay={data.aosDelay}
@@ -497,7 +519,7 @@ const Women = () => {
                 </button>
               </div>
             </div>
-          </div>
+          </Link>
         ))}
       </div>
 
@@ -508,7 +530,7 @@ const Women = () => {
       </h2>
       <div className="flex flex-wrap justify-center bg-gradient-to-r from-orange-500 via-purple-400 to-blue-300">
         {womenFootwearList.map((data) => (
-          <div
+          <Link to={`/singlePage/${data.id}`}
             className="p-5"
             data-aos="flip-left"
             data-aos-delay={data.aosDelay}
@@ -530,7 +552,7 @@ const Women = () => {
                 </button>
               </div>
             </div>
-          </div>
+          </Link>
         ))}
       </div>
 
@@ -550,7 +572,7 @@ const Women = () => {
         data-aos-anchor-placement="top-center"
       >
         {womenHandbagsList.map((data) => (
-          <div
+          <Link to={`/singlePage/${data.id}`}
             className="p-5"
             data-aos="fade-right"
             data-aos-delay={data.aosDelay}
@@ -569,7 +591,7 @@ const Women = () => {
                 </button>
               </div>
             </div>
-          </div>
+          </Link>
         ))}
       </div>
 
@@ -586,13 +608,13 @@ const Women = () => {
         data-aos-anchor-placement="top-center"
       >
         {makeupList.map((data) => (
-          <div className="mb-4">
+          <Link to={`/singlePage/${data.id}`} className="mb-4">
             <img
               src={data.img}
               alt="image"
               className="w-full h-40 object-contain mb-2"
             />
-          </div>
+          </Link>
         ))}
       </div>
 
@@ -603,7 +625,7 @@ const Women = () => {
       </h2>
       <div className="flex flex-wrap justify-center bg-gradient-to-r from-orange-500 via-purple-400 to-cyan-400">
         {womenSweatersList.map((data) => (
-          <div
+          <Link to={`/singlePage/${data.id}`}
             className="p-5"
             data-aos="fade-up"
             data-aos-delay={data.aosDelay}
@@ -625,7 +647,7 @@ const Women = () => {
                 </button>
               </div>
             </div>
-          </div>
+          </Link>
         ))}
       </div>
 
@@ -645,7 +667,7 @@ const Women = () => {
         data-aos-anchor-placement="top-center"
       >
         {womenWatchesList.map((data) => (
-          <div
+          <Link to={`/singlePage/${data.id}`}
             className="p-5"
             data-aos="zoom-in-down"
             data-aos-delay={data.aosDelay}
@@ -664,7 +686,7 @@ const Women = () => {
                 </button>
               </div>
             </div>
-          </div>
+          </Link>
         ))}
       </div>
 
@@ -675,14 +697,14 @@ const Women = () => {
           <h1 className="text-2xl">30% sale | Jewellery</h1>
           <div className="mt-4 flex flex-wrap justify-around gap-16 ">
             {jewelleryList.map((data) => (
-              <div>
+              <Link to={`/singlePage/${data.id}`}>
                 <img
                   src={data.img}
                   alt="image"
                   className="w-38 h-20 object-contain mb-2"
                 />
                 <h1 className="text-center">{data.title}</h1>
-              </div>
+              </Link>
             ))}
           </div>
         </div>
@@ -692,14 +714,14 @@ const Women = () => {
           <h1 className="text-2xl">50% sale | Spectacles</h1>
           <div className="mt-4 flex flex-wrap justify-around gap-16">
             {spectList.map((data) => (
-              <div>
+              <Link to={`/singlePage/${data.id}`}>
                 <img
                   src={data.img}
                   alt="image"
                   className="w-28 h-20 object-contain mb-2"
                 />
                 <h1 className="text-center">{data.title}</h1>
-              </div>
+              </Link>
             ))}
           </div>
         </div>
@@ -708,14 +730,14 @@ const Women = () => {
           <h1 className="text-2xl">70% sale | Belt</h1>
           <div className="mt-4 flex flex-wrap justify-around gap-16">
             {beltList.map((data) => (
-              <div>
+              <Link to={`/singlePage/${data.id}`}>
                 <img
                   src={data.img}
                   alt="image"
                   className="w-28 h-20 object-contain mb-2"
                 />
                 <h1 className="text-center">{data.title}</h1>
-              </div>
+              </Link>
             ))}
           </div>
         </div>
