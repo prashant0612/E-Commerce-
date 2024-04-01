@@ -1,6 +1,7 @@
 import React from 'react'
 import backgroundImg2 from './images/bg-img2.jpg'
 
+
 const Login = () => {
   return (
     <div className='relative w-full h-full' data-aos="fade" data-aos-delay="200">

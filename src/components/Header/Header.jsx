@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import shoppingIcon from '../Header/Images/E-commerce Icon.png'
 import { FaCartArrowDown } from "react-icons/fa";
 import {Link , NavLink } from 'react-router-dom';
@@ -7,6 +7,9 @@ import "aos/dist/aos.css";
 import { CiSearch } from "react-icons/ci";
 
 const Header = () => {
+
+
+
   return (
     <div className=' w-full h-20 bg-gradient-to-r from-purple-600 via-red-500 to-yellow-300 flex justify-between align-middle items-center fixed z-10 max-[768px]:flex-col max-[768px]:h-auto max-[768px]:w-full'>
       <Link to='/' className='duration-700  '>  
@@ -49,7 +52,7 @@ const Header = () => {
       <div className='flex items-center'>
         <Link to= "/login"> <button className=' mr-12 bg-red-600 p-2 px-5 rounded-2xl text-white font-bold max-[768px]:hidden'>Login</button></Link>
         <Link to="/cart"> <FaCartArrowDown className='mr-10 text-2xl max-[768px]:hidden'/></Link>
-      </div>
+      </div>    
     </div>
   )
 }
