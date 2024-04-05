@@ -52,17 +52,20 @@ const Header = () => {
           </NavLink>
         </li>
         <Link to="/cart"> <FaCartArrowDown className='mr-10 text-2xl hidden max-[768px]:mr-0 max-[768px]:block'/></Link>
+
+        {isAuthenticated &&
+        <div className='flex align-middle items-center'>
+          <p className='text-purple-700 font-semibold'>Welcome<span className='font-bold text-black ml-4'>{user.name}</span></p>
+          <img src={user.picture} alt="image" className='w-10 rounded-full ml-3'/>
+        </div>     
+        }
+
         {isAuthenticated ?
         (<button className=' mr-12 bg-red-600 p-2 px-5 rounded-2xl text-white font-bold max-[768px]:mr-0 max-[768px]:px-3 max-[768px]:rounded-xl max-[768px]:ml-2' onClick={() => logout({ logoutParams: { returnTo: window.location.origin } })}>LogOut</button>)
         :(<button className=' mr-12 bg-red-600 p-2 px-5 rounded-2xl text-white font-bold max-[768px]:mr-0 max-[768px]:px-3 max-[768px]:rounded-xl max-[768px]:ml-2' onClick={()=> loginWithRedirect()}>Login</button>)
         }
       </ul>
-      {isAuthenticated &&
-        <div className='flex align-middle items-center'>
-          <p className='text-purple-700 font-semibold'>Welcome<span className='font-bold text-black ml-4'>{user.name}</span></p>
-          <img src={user.picture} alt="image" className='w-10 rounded-full ml-3'/>
-        </div>     
-      }
+      
       <div className='flex items-center justify-center align-middle'>
 
         <Link to="/cart">
