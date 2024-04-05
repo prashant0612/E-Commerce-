@@ -52,6 +52,10 @@ const Header = () => {
           </NavLink>
         </li>
         <Link to="/cart"> <FaCartArrowDown className='mr-10 text-2xl hidden max-[768px]:mr-0 max-[768px]:block'/></Link>
+        {isAuthenticated ?
+        (<button className=' mr-12 bg-red-600 p-2 px-5 rounded-2xl text-white font-bold max-[768px]:mr-0 max-[768px]:px-3 max-[768px]:rounded-xl max-[768px]:ml-2' onClick={() => logout({ logoutParams: { returnTo: window.location.origin } })}>LogOut</button>)
+        :(<button className=' mr-12 bg-red-600 p-2 px-5 rounded-2xl text-white font-bold max-[768px]:mr-0 max-[768px]:px-3 max-[768px]:rounded-xl max-[768px]:ml-2' onClick={()=> loginWithRedirect()}>Login</button>)
+        }
       </ul>
       {isAuthenticated &&
         <div className='flex align-middle items-center'>
@@ -59,15 +63,10 @@ const Header = () => {
           <img src={user.picture} alt="image" className='w-10 rounded-full ml-3'/>
         </div>     
       }
-      <div className='flex items-center'>
+      <div className='flex items-center justify-center align-middle'>
 
-        {isAuthenticated ?
-        (<button className=' mr-12 bg-red-600 p-2 px-5 rounded-2xl text-white font-bold max-[768px]:hidden' onClick={() => logout({ logoutParams: { returnTo: window.location.origin } })}>LogOut</button>)
-        :(<button className=' mr-12 bg-red-600 p-2 px-5 rounded-2xl text-white font-bold max-[768px]:hidden' onClick={()=> loginWithRedirect()}>Login</button>)
-        }
-         
         <Link to="/cart">
-         <span className='text-xl font-extrabold text-purple-600 absolute top-1 right-11 z-10'>{cartItems.length}</span>
+         <span className='text-xl font-extrabold text-purple-600 absolute top-1 right-11 z-10 max-[768px]:top-9 max-[768px]:right-[100px]'>{cartItems.length}</span>
          <FaCartArrowDown className='mr-10 text-2xl max-[768px]:hidden relative'/>
           </Link>
       </div>    
