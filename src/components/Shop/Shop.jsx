@@ -33,41 +33,46 @@ import { Link } from "react-router-dom";
 
 const WomenProduct = [
   {
-    id: 27,
+    id: 1,
     img: womenImg1,
     title: "Women Ethnic",
+    price:500,
     rating: 5.0,
     color: "white",
     aosDelay: "0",
   },
   {
-    id: 28,
+    id: 2,
     img: womenImg2,
     title: "Women western",
+    price:400,
     rating: 5.0,
     color: "red",
     aosDelay: "0",
   },
   {
-    id: 29,
+    id: 3,
     img: womenImg3,
     title: "Goggles",
+    price:1000,
     rating: 5.0,
     color: "brown",
     aosDelay: "0",
   },
   {
-    id: 30,
+    id: 4,
     img: womenImg4,
     title: "Printed T-shirt",
+    price:1200,
     rating: 5.0,
     color: "yellow",
     aosDelay: "0",
   },
   {
-    id: 31,
+    id: 5,
     img: womenImg2,
     title: "Printed T-shirt",
+    price:350,
     rating: 5.0,
     color: "yellow",
     aosDelay: "0",
@@ -80,35 +85,35 @@ export const WomenProductList = WomenProduct;
 
 const KidsProduct = [
   {
-    id: 22,
+    id: 6,
     img: kidImg1,
     star: "⭐⭐⭐⭐",
     name: "Product 1",
     price: 454,
   },
   {
-    id: 23,
+    id: 7,
     img: kidImg6,
     star: "⭐⭐⭐",
     name: "Product 2",
     price: 712,
   },
   {
-    id: 24,
+    id: 8,
     img: kidImg3,
     star: "⭐⭐⭐⭐⭐",
     name: "Product 3",
     price: 534,
   },
   {
-    id: 25,
+    id: 9,
     img: kidImg4,
     star: "⭐⭐⭐",
     name: "Product 4",
     price: 626,
   },
   {
-    id: 26,
+    id: 10,
     img: kidImg5,
     star: "⭐⭐⭐⭐",
     name: "Product 5",
@@ -121,35 +126,35 @@ export const KidsProductList = KidsProduct;
 
 const ImageList = [
   {
-    id: 1,
+    id: 11,
     img: bg1,
     title: "Upto 50% off on all Men's Wear",
     description:
       "lorem His Life will forever be Changed dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   },
   {
-    id: 2,
+    id: 12,
     img: bg2,
     title: "30% off on all Shoes Wear",
     description:
       "Who's there lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   },
   {
-    id: 3,
+    id: 13,
     img: bg3,
     title: "70% off on all Products Sale",
     description:
       "consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   },
   {
-    id: 4,
+    id: 14,
     img: bg4,
     title: "70% off on kids Sale",
     description:
       "consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   },
   {
-    id: 5,
+    id: 15,
     img: bg5,
     title: "70% off on all Women Sale",
     description:
@@ -159,19 +164,19 @@ const ImageList = [
 
 const MenProducts = [
   {
-    id: 19,
+    id: 16,
     img: tshirt,
     title: "Casual Wear",
     description: "Lorem ipsum dolor, sit amet consectetur adipisicing.",
   },
   {
-    id: 20,
+    id: 17,
     img: tshirt2,
     title: "Printed Shirt",
     description: "Lorem ipsum dolor, sit amet consectetur adipisicing.",
   },
   {
-    id: 21,
+    id: 18,
     img: tshirt3,
     title: "Women Wear",
     description: "Lorem ipsum dolor, sit amet consectetur adipisicing.",
@@ -273,6 +278,7 @@ const Shop = () => {
               <p className="text-gray-400">{data.color}</p>
               <span className="flex justify-between">
                 <div className="flex items-center text-[18px]">
+                  <p className="mr-1">&#8377;{data.price}</p>
                   <p className="text-yellow-500 text-2xl">&#9733;</p>
                   <p>{data.rating}</p>
                 </div>

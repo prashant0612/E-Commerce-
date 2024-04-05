@@ -1,11 +1,12 @@
-import React, { useState } from 'react'
+import React, { useState,useContext } from 'react'
 import Header from './components/Header/Header'
 import Footer from './components/Footer/Footer'
 import { Outlet } from 'react-router-dom'
 
 
-const Layout = ({adnan}) => {
 
+const Layout = () => {
+   
   return (
     <div>
     <Header/>

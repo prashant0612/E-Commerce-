@@ -1,14 +1,15 @@
-import React, { useState } from 'react'
+import React, { useState,useContext } from 'react'
 import shoppingIcon from '../Header/Images/E-commerce Icon.png'
 import { FaCartArrowDown } from "react-icons/fa";
 import {Link , NavLink } from 'react-router-dom';
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { CiSearch } from "react-icons/ci";
+import { CartContext } from "../CartContext";
 
 const Header = () => {
 
-
+  const { cartItems } = useContext(CartContext);
 
   return (
     <div className=' w-full h-20 bg-gradient-to-r from-purple-600 via-red-500 to-yellow-300 flex justify-between align-middle items-center fixed z-10 max-[768px]:flex-col max-[768px]:h-auto max-[768px]:w-full'>
@@ -51,7 +52,11 @@ const Header = () => {
       </ul>
       <div className='flex items-center'>
         <Link to= "/login"> <button className=' mr-12 bg-red-600 p-2 px-5 rounded-2xl text-white font-bold max-[768px]:hidden'>Login</button></Link>
-        <Link to="/cart"> <FaCartArrowDown className='mr-10 text-2xl max-[768px]:hidden'/></Link>
+
+        <Link to="/cart">
+         <span className='text-xl font-extrabold text-purple-600 absolute top-1 right-11 z-10'>{cartItems.length}</span>
+         <FaCartArrowDown className='mr-10 text-2xl max-[768px]:hidden relative'/>
+          </Link>
       </div>    
     </div>
   )

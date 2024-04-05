@@ -48,21 +48,21 @@ import { Link } from "react-router-dom";
 
 const ImageList = [
   {
-    id: 1,
+    id: 92,
     img: offer1,
     title: "Upto 30% off on all Kids's Wear",
     description:
       "lorem His Life will forever be Changed dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   },
   {
-    id: 2,
+    id: 93,
     img: offer2,
     title: "40% off on all products",
     description:
       "Who's there lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   },
   {
-    id: 3,
+    id: 94,
     img: offer3,
     title: "50% off on all Products Sale",
     description:
@@ -72,37 +72,37 @@ const ImageList = [
 
 const toyList = [
   {
-    id: 71,
+    id: 95,
     img: toyImg1,
     title: "Toy Product 1",
     price: 282,
   },
   {
-    id: 72,
+    id: 96,
     img: toyImg2,
     title: "Toy Product 2",
     price: 512,
   },
   {
-    id: 73,
+    id: 97,
     img: toyImg3,
     title: "Toy Product 3",
     price: 702,
   },
   {
-    id: 74,
+    id: 98,
     img: toyImg4,
     title: "Toy Product 4",
     price: 414,
   },
   {
-    id: 75,
+    id: 99,
     img: toyImg5,
     title: "Toy Product 5",
     price: 596,
   },
   {
-    id: 76,
+    id: 100,
     img: toyImg6,
     title: "Toy Product 6",
     price: 385,
@@ -113,7 +113,7 @@ export const toyListAll = toyList;
 
 const costumeList = [
   {
-    id: 77,
+    id: 101,
     img: kidImg1,
     title: "costume1",
     price: 320,
@@ -121,7 +121,7 @@ const costumeList = [
     transition: "fade-down",
   },
   {
-    id: 78,
+    id: 102,
     img: kidImg2,
     title: "costume2",
     price: 520,
@@ -129,7 +129,7 @@ const costumeList = [
     transition: "flip-down",
   },
   {
-    id: 79,
+    id: 103,
     img: kidImg3,
     title: "costume3",
     price: 512,
@@ -137,7 +137,7 @@ const costumeList = [
     transition: "zoom-in-up",
   },
   {
-    id: 80,
+    id: 104,
     img: kidImg4,
     title: "costume4",
     price: 641,
@@ -145,7 +145,7 @@ const costumeList = [
     transition: "fade-left",
   },
   {
-    id: 81,
+    id: 105,
     img: kidImg5,
     title: "costume5",
     price: 520,
@@ -153,7 +153,7 @@ const costumeList = [
     transition: "zoom-out-up",
   },
   {
-    id: 82,
+    id: 106,
     img: kidImg6,
     title: "costume6",
     price: 742,
@@ -161,7 +161,7 @@ const costumeList = [
     transition: "flip-left",
   },
   {
-    id: 83,
+    id: 107,
     img: kidImg7,
     title: "costume7",
     price: 699,
@@ -169,7 +169,7 @@ const costumeList = [
     transition: "fade-right",
   },
   {
-    id: 84,
+    id: 108,
     img: kidImg8,
     title: "costume8",
     price: 450,
@@ -177,7 +177,7 @@ const costumeList = [
     transition: "zoom-in-up",
   },
   {
-    id: 85,
+    id: 109,
     img: kidImg9,
     title: "costume9",
     price: 597,
@@ -185,7 +185,7 @@ const costumeList = [
     transition: "fade-down-right",
   },
   {
-    id: 86,
+    id: 110,
     img: kidImg10,
     title: "costume10",
     price: 432,
@@ -193,7 +193,7 @@ const costumeList = [
     transition: "zoom-in",
   },
   {
-    id: 87,
+    id: 111,
     img: kidImg11,
     title: "costume11",
     price: 612,
@@ -201,7 +201,7 @@ const costumeList = [
     transition: "fade-up",
   },
   {
-    id: 88,
+    id: 112,
     img: kidImg12,
     title: "costume12",
     price: 512,
@@ -209,7 +209,7 @@ const costumeList = [
     transition: "flip-down",
   },
   {
-    id: 89,
+    id: 113,
     img: kidImg13,
     title: "costume13",
     price: 699,
@@ -217,7 +217,7 @@ const costumeList = [
     transition: "flip-left",
   },
   {
-    id: 90,
+    id: 114,
     img: kidImg14,
     title: "costume14",
     price: 475,
@@ -225,7 +225,7 @@ const costumeList = [
     transition: "zoom-out-right",
   },
   {
-    id: 91,
+    id: 115,
     img: kidImg15,
     title: "costume15",
     price: 498,
@@ -238,43 +238,43 @@ export const costumeListAll = costumeList;
 
 const teddyList =[
   {
-    id:92,
+    id:116,
     img:teddyImg1,
     title:"Teddy1",
     price:454
   },
   {
-    id:93,
+    id:117,
     img:teddyImg2,
     title:"Teddy3",
     price:504
   },
   {
-    id:94,
+    id:118,
     img:teddyImg3,
     title:"Teddy3",
     price:672
   },
   {
-    id:95,
+    id:119,
     img:teddyImg4,
     title:"Teddy4",
     price:642
   },
   {
-    id:96,
+    id:120,
     img:teddyImg5,
     title:"Teddy5",
     price:714
   },
   {
-    id:97,
+    id:121,
     img:teddyImg6,
     title:"Teddy6",
     price:767
   },
   {
-    id:98,
+    id:122,
     img:teddyImg7,
     title:"Teddy7",
     price:702

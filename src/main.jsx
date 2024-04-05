@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState,useContext } from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
@@ -11,6 +11,7 @@ import Login from './components/Login/Login.jsx';
 import Cart from './components/Cart/Cart.jsx'; 
 import SingleProductPage from './components/SingleProductPage/SingleProductPage.jsx';
 import { CartProvider } from './components/CartContext.jsx';
+import Sign from './components/Sign-up/Sign.jsx';
 
 const App = () => {
   
@@ -21,8 +22,12 @@ const App = () => {
       element: <Login />
     },
     {
+      path: 'signup',
+      element: <Sign/>
+    },
+    {
       path: '/',
-      element: <Layout/>,
+      element: <Layout />,
       children: [
         {
           path: '',
@@ -42,7 +47,7 @@ const App = () => {
         },
         {
           path: 'Cart',
-          element: <Cart />
+          element: <Cart/>
         },
         {
           path: '/singlePage/:productId',

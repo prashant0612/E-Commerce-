@@ -44,21 +44,21 @@ import { Link } from "react-router-dom";
 
 const ImageList = [
   {
-    id: 1,
+    id: 19,
     img: bg1,
     title: "Upto 50% off on all Men's Wear",
     description:
       "lorem His Life will forever be Changed dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   },
   {
-    id: 2,
+    id: 20,
     img: bg2,
     title: "30% off on all Shoes Wear",
     description:
       "Who's there lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   },
   {
-    id: 3,
+    id: 21,
     img: bg3,
     title: "70% off on all Products Sale",
     description:
@@ -68,59 +68,59 @@ const ImageList = [
 
 const ProductList = [
   {
-    id: 1,
+    id: 22,
     img: productImg1,
     title: "Lorem ipsum dolor",
-    price: "$100",
+    price: 100,
     aosDelay: "0",
   },
   {
-    id: 2,
+    id: 23,
     img: productImg2,
     title: "Lorem ipsum dolor",
-    price: "$120",
+    price: 120,
     aosDelay: "200",
   },
   {
-    id: 3,
+    id: 24,
     img: productImg3,
     title: "Lorem ipsum dolor",
-    price: "$130",
+    price: 130,
     aosDelay: "400",
   },
   {
-    id: 4,
+    id: 25,
     img: productImg4,
     title: "Lorem ipsum dolor",
-    price: "$90",
+    price: 90,
     aosDelay: "600",
   },
   {
-    id: 5,
+    id: 26,
     img: productImg5,
     title: "Lorem ipsum dolor",
-    price: "$200",
+    price: 200,
     aosDelay: "800",
   },
   {
-    id: 6,
+    id: 27,
     img: productImg6,
     title: "Lorem ipsum dolor",
-    price: "$70",
+    price: 70,
     aosDelay: "1000",
   },
   {
-    id: 7,
+    id: 28,
     img: productImg7,
     title: "Lorem ipsum dolor",
-    price: "$95",
+    price: 95,
     aosDelay: "1200",
   },
   {
-    id: 8,
+    id: 29,
     img: productImg8,
     title: "Lorem ipsum dolor",
-    price: "$140",
+    price: 140,
     aosDelay: "1400",
   },
 ];
@@ -129,83 +129,83 @@ export const ProductListAll = ProductList;
 
 const SpecialProducList = [
   {
-    id: 9,
+    id: 30,
     img: SpecialProductImg1,
     title: "Lorem ipsum dolor sit amet.",
-    old_price: "$120",
-    new_price: "$100",
+    old_price: 120,
+    new_price: 100,
     aosDelay: "0",
   },
   {
-    id: 10,
+    id: 31,
     img: SpecialProductImg2,
     title: "Lorem ipsum dolor sit amet.",
-    old_price: "$120",
-    new_price: "$100",
+    old_price: 120,
+    new_price: 100,
     aosDelay: "200",
   },
   {
-    id: 11,
+    id: 32,
     img: SpecialProductImg3,
     title: "Lorem ipsum dolor sit amet.",
-    old_price: "$120",
-    new_price: "$100",
+    old_price: 120,
+    new_price: 100,
     aosDelay: "400",
   },
   {
-    id: 12,
+    id: 33,
     img: SpecialProductImg4,
     title: "Lorem ipsum dolor sit amet.",
-    old_price: "$120",
-    new_price: "$100",
+    old_price: 120,
+    new_price: 100,
     aosDelay: "800",
   },
   {
-    id: 13,
+    id: 34,
     img: SpecialProductImg5,
     title: "Lorem ipsum dolor sit amet.",
-    old_price: "$120",
-    new_price: "$100",
+    old_price: 120,
+    new_price: 100,
     aosDelay: "1000",
   },
   {
-    id: 14,
+    id: 35,
     img: SpecialProductImg6,
     title: "Lorem ipsum dolor sit amet.",
-    old_price: "$120",
-    new_price: "$100",
+    old_price: 120,
+    new_price: 100,
     aosDelay: "1200",
   },
   {
-    id: 15,
+    id: 36,
     img: SpecialProductImg7,
     title: "Lorem ipsum dolor sit amet.",
-    old_price: "$120",
-    new_price: "$100",
+    old_price: 120,
+    new_price: 100,
     aosDelay: "1400",
   },
   {
-    id: 16,
+    id: 37,
     img: SpecialProductImg8,
     title: "Lorem ipsum dolor sit amet.",
-    old_price: "$120",
-    new_price: "$100",
+    old_price: 120,
+    new_price: 100,
     aosDelay: "1600",
   },
   {
-    id: 17,
+    id: 38,
     img: SpecialProductImg9,
     title: "Lorem ipsum dolor sit amet.",
-    old_price: "$120",
-    new_price: "$100",
+    old_price: 120,
+    new_price: 100,
     aosDelay: "1800",
   },
   {
-    id: 18,
+    id: 39,
     img: SpecialProductImg10,
     title: "Lorem ipsum dolor sit amet.",
-    old_price: "$120",
-    new_price: "$100",
+    old_price: 120,
+    new_price: 100,
     aosDelay: "2000",
   },
 ];
@@ -215,35 +215,35 @@ export const SpecialProductListAll = SpecialProducList;
 
 const shoes_product = [
   {
-    id: 1,
+    id: 40,
     name: "Nike Shoes",
     image: shoe1,
     new_price: 90.0,
     old_price: 120.0,
   },
   {
-    id: 2,
+    id: 41,
     name: "Nike Shoes",
     image: shoe2,
     new_price: 200.0,
     old_price: 320.0,
   },
   {
-    id: 3,
+    id: 42,
     name: "Nike Shoes",
     image: shoe3,
     new_price: 100.0,
     old_price: 120.0,
   },
   {
-    id: 4,
+    id: 43,
     name: "Nike Shoes",
     image: shoe4,
     new_price: 120.0,
     old_price: 150.0,
   },
   {
-    id: 5,
+    id: 44,
     name: "Nike Shoes",
     image: shoe5,
     new_price: 250.0,
@@ -348,7 +348,7 @@ const Men = () => {
                 className="w-full h-40 object-contain mb-2"
               />
               <p className="text-xs text-center">{data.title}</p>
-              <p className="text-center text-amber-800">{data.price}</p>
+              <p className="text-center text-amber-800">&#8377;{data.price}</p>
               <div className="flex justify-center">
                 <button className="text-[10px] flex items-center bg-red-500 text-white p-1 px-3 hover:bg-red-800 duration-300">
                   <FaShoppingCart /> Add to cart
@@ -378,9 +378,9 @@ const Men = () => {
                 className="w-full h-40 object-contain mb-2"
               />
               <p className="text-xs text-center">{data.title}</p>
-              <p className="text-center text-amber-800">
-                {data.old_price}{" "}
-                <span className="line-through">{data.new_price}</span>
+              <p className="text-center text-amber-800">&#8377;
+                {data.old_price} {' '}
+                <span className="line-through">&#8377;{data.new_price}</span>
               </p>
               <div className="flex justify-center">
                 <button className="text-[10px] flex items-center  bg-red-500 text-white p-1 px-3 hover:bg-red-800 duration-300">

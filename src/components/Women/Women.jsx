@@ -68,21 +68,21 @@ import { Link } from "react-router-dom";
 
 const ImageList = [
   {
-    id: 1,
+    id: 45,
     img: offer1,
     title: "Upto 30% off on all Women's Wear",
     description:
       "lorem His Life will forever be Changed dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   },
   {
-    id: 2,
+    id: 46,
     img: offer2,
     title: "40% off on all products",
     description:
       "Who's there lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   },
   {
-    id: 3,
+    id: 47,
     img: offer3,
     title: "50% off on all Products Sale",
     description:
@@ -92,38 +92,38 @@ const ImageList = [
 
 const WomenDressList = [
   {
-    id: 27,
+    id: 48,
     img: dressImg1,
     title: "Lorem ipsum dolor",
-    price: "$100",
+    new_price: 100,
     aosDelay: "0",
   },
   {
-    id: 28,
+    id: 49,
     img: dressImg2,
     title: "Lorem ipsum dolor",
-    price: "$120",
+    new_price: 120,
     aosDelay: "200",
   },
   {
-    id: 29,
+    id: 50,
     img: dressImg3,
     title: "Lorem ipsum dolor",
-    price: "$130",
+    new_price: 130,
     aosDelay: "400",
   },
   {
-    id: 30,
+    id: 51,
     img: dressImg4,
     title: "Lorem ipsum dolor",
-    price: "$90",
+    new_price: 90,
     aosDelay: "600",
   },
   {
-    id: 31,
+    id: 52,
     img: dressImg5,
     title: "Lorem ipsum dolor",
-    price: "$200",
+    new_price: 200,
     aosDelay: "800",
   },
 ];
@@ -132,43 +132,43 @@ export const WomenDressListAll = WomenDressList;
 
 const womenFootwearList = [
   {
-    id: 32,
+    id: 53,
     img: footwearImg1,
     title: "Lorem ipsum dolor sit amet.",
-    old_price: "$120",
-    new_price: "$100",
+    old_price: 120,
+    new_price: 100,
     aosDelay: "0",
   },
   {
-    id: 33,
+    id: 54,
     img: footwearImg2,
     title: "Lorem ipsum dolor sit amet.",
-    old_price: "$120",
-    new_price: "$100",
+    old_price: 120,
+    new_price: 100,
     aosDelay: "200",
   },
   {
-    id: 34,
+    id: 55,
     img: footwearImg3,
     title: "Lorem ipsum dolor sit amet.",
-    old_price: "$120",
-    new_price: "$100",
+    old_price: 120,
+    new_price: 100,
     aosDelay: "400",
   },
   {
-    id: 35,
+    id: 56,
     img: footwearImg4,
     title: "Lorem ipsum dolor sit amet.",
-    old_price: "$120",
-    new_price: "$100",
+    old_price: 120,
+    new_price: 100,
     aosDelay: "800",
   },
   {
-    id: 36,
+    id: 57,
     img: footwearImg5,
     title: "Lorem ipsum dolor sit amet.",
-    old_price: "$120",
-    new_price: "$100",
+    old_price: 120,
+    new_price: 100,
     aosDelay: "1000",
   },
 ];
@@ -177,38 +177,38 @@ export const WomenFootwearListAll = womenFootwearList;
 
 const womenHandbagsList = [
   {
-    id: 37,
+    id: 58,
     img: handbagsImg1,
     title: "Lorem ipsum dolor sit amet.",
-    price: "$100",
+    price: 100,
     aosDelay: "0",
   },
   {
-    id: 38,
+    id: 59,
     img: handbagsImg2,
     title: "Lorem ipsum dolor sit amet.",
-    price: "$200",
+    price: 200,
     aosDelay: "200",
   },
   {
-    id: 39,
+    id: 60,
     img: handbagsImg3,
     title: "Lorem ipsum dolor sit amet.",
-    price: "$120",
+    price: 120,
     aosDelay: "400",
   },
   {
-    id: 40,
+    id: 61,
     img: handbagsImg4,
     title: "Lorem ipsum dolor sit amet.",
-    price: "$120",
+    price: 120,
     aosDelay: "800",
   },
   {
-    id: 41,
+    id: 62,
     img: handbagsImg5,
     title: "Lorem ipsum dolor sit amet.",
-    price: "$120",
+    price: 120,
     aosDelay: "1000",
   },
 ];
@@ -217,43 +217,43 @@ export const WomenHandbagsListAll = womenHandbagsList;
 
 const womenSweatersList = [
   {
-    id: 42,
+    id: 63,
     img: sweaterImg1,
     title: "Lorem ipsum dolor sit amet.",
-    old_price: "$120",
-    new_price: "$100",
+    old_price: 120,
+    new_price: 100,
     aosDelay: "0",
   },
   {
-    id: 43,
+    id: 64,
     img: sweaterImg2,
     title: "Lorem ipsum dolor sit amet.",
-    old_price: "$120",
-    new_price: "$100",
+    old_price: 120,
+    new_price: 100,
     aosDelay: "200",
   },
   {
-    id: 44,
+    id: 65,
     img: sweaterImg3,
     title: "Lorem ipsum dolor sit amet.",
-    old_price: "$120",
-    new_price: "$100",
+    old_price: 120,
+    new_price: 100,
     aosDelay: "400",
   },
   {
-    id: 45,
+    id: 66,
     img: sweaterImg4,
     title: "Lorem ipsum dolor sit amet.",
-    old_price: "$120",
-    new_price: "$100",
+    old_price: 120,
+    new_price: 100,
     aosDelay: "800",
   },
   {
-    id: 46,
+    id: 67,
     img: sweaterImg5,
     title: "Lorem ipsum dolor sit amet.",
-    old_price: "$120",
-    new_price: "$100",
+    old_price: 120,
+    new_price: 100,
     aosDelay: "1000",
   },
 ];
@@ -262,38 +262,38 @@ export const WomenSweatersListAll = womenSweatersList ;
 
 const womenWatchesList = [
   {
-    id: 47,
+    id: 68,
     img: watchesImg1,
     title: "Lorem ipsum dolor sit amet.",
-    price: "$120",
+    price: 120,
     aosDelay: "0",
   },
   {
-    id: 48,
+    id: 69,
     img: watchesImg2,
     title: "Lorem ipsum dolor sit amet.",
-    price: "$100",
+    price: 100,
     aosDelay: "200",
   },
   {
-    id: 49,
+    id: 70,
     img: watchesImg3,
     title: "Lorem ipsum dolor sit amet.",
-    price: "$140",
+    price: 140,
     aosDelay: "400",
   },
   {
-    id: 50,
+    id: 71,
     img: watchesImg4,
     title: "Lorem ipsum dolor sit amet.",
-    price: "$120",
+    price: 120,
     aosDelay: "800",
   },
   {
-    id: 51,
+    id: 72,
     img: watchesImg5,
     title: "Lorem ipsum dolor sit amet.",
-    price: "$100",
+    price: 100,
     aosDelay: "1000",
   },
 ];
@@ -302,37 +302,37 @@ export const WomenWatchesListAll = womenWatchesList;
 
 const makeupList = [
   {
-    id: 52,
+    id: 73,
     img: makeupImg1,
     title: "Lorem ipsum dolor sit amet.",
   },
   {
-    id: 53,
+    id: 74,
     img: makeupImg2,
     title: "Lorem ipsum dolor sit amet.",
   },
   {
-    id: 54,
+    id: 75,
     img: makeupImg3,
     title: "Lorem ipsum dolor sit amet.",
   },
   {
-    id: 55,
+    id: 76,
     img: makeupImg4,
     title: "Lorem ipsum dolor sit amet.",
   },
   {
-    id: 56,
+    id: 77,
     img: makeupImg5,
     title: "Lorem ipsum dolor sit amet.",
   },
   {
-    id: 57,
+    id: 78,
     img: makeupImg6,
     title: "Lorem ipsum dolor sit amet.",
   },
   {
-    id: 58,
+    id: 79,
     img: makeupImg7,
     title: "Lorem ipsum dolor sit amet.",
   },
@@ -342,22 +342,22 @@ export const MakeupListAll = makeupList;
 
 const jewelleryList = [
   {
-    id: 59,
+    id: 80,
     img: jewelleryImg1,
     title: "Jewellery",
   },
   {
-    id: 60,
+    id: 81,
     img: jewelleryImg2,
     title: "Jewellery",
   },
   {
-    id: 61,
+    id: 82,
     img: jewelleryImg3,
     title: "Jewellery",
   },
   {
-    id: 62,
+    id: 83,
     img: jewelleryImg4,
     title: "Jewellery",
   },
@@ -367,22 +367,22 @@ export const JewelleryListAll = jewelleryList;
 
 const spectList = [
   {
-    id: 63,
+    id: 84,
     img:spectImg1,
     title: "Spect",
   },
   {
-    id: 64,
+    id: 85,
     img:spectImg2,
     title: "Spect",
   },
   {
-    id: 65,
+    id: 86,
     img:spectImg3,
     title: "Spect",
   },
   {
-    id: 66,
+    id: 87,
     img:spectImg4,
     title: "Spect",
   }
@@ -392,22 +392,22 @@ export const SpectListAll = spectList;
 
 const beltList =[
   {
-    id:67,
+    id:88,
     img:beltImg1,
     title:"Belt"
   },
   {
-    id:68,
+    id:89,
     img:beltImg2,
     title:"Belt"
   },
   {
-    id:69,
+    id:90,
     img:beltImg3,
     title:"Belt"
   },
   {
-    id:70,
+    id:91,
     img:beltImg4,
     title:"Belt"
   },
@@ -512,7 +512,7 @@ const Women = () => {
                 className="w-full h-40 object-contain mb-2"
               />
               <p className="text-xs text-center">{data.title}</p>
-              <p className="text-center text-amber-800">{data.price}</p>
+              <p className="text-center text-amber-800">&#8377;{data.new_price}</p>
               <div className="flex justify-center">
                 <button className="text-[10px] flex items-center bg-red-500 text-white p-1 px-3 hover:bg-red-800 duration-300">
                   <FaShoppingCart /> Add to cart
@@ -520,7 +520,7 @@ const Women = () => {
               </div>
             </div>
           </Link>
-        ))}
+            ))}
       </div>
 
       {/* Women Footwear */}
@@ -542,9 +542,9 @@ const Women = () => {
                 className="w-full h-40 object-contain mb-2"
               />
               <p className="text-xs text-center">{data.title}</p>
-              <p className="text-center text-amber-800">
+              <p className="text-center text-amber-800">&#8377;
                 {data.old_price}{" "}
-                <span className="line-through">{data.new_price}</span>
+                <span className="line-through">&#8377;{data.new_price}</span>
               </p>
               <div className="flex justify-center">
                 <button className="text-[10px] flex items-center  bg-red-500 text-white p-1 px-3 hover:bg-red-800 duration-300">
@@ -584,7 +584,7 @@ const Women = () => {
                 className="w-full h-40 object-contain mb-2"
               />
               <p className="text-xs text-center">{data.title}</p>
-              <p className="text-center text-amber-800">{data.price}</p>
+              <p className="text-center text-amber-800">&#8377;{data.price}</p>
               <div className="flex justify-center">
                 <button className="text-[10px] flex items-center bg-red-500 text-white p-1 px-3 hover:bg-red-800 duration-300">
                   <FaShoppingCart /> Add to cart
@@ -637,9 +637,9 @@ const Women = () => {
                 className="w-full h-40 object-contain mb-2"
               />
               <p className="text-xs text-center">{data.title}</p>
-              <p className="text-center text-amber-800">
+              <p className="text-center text-amber-800">&#8377;
                 {data.old_price}{" "}
-                <span className="line-through">{data.new_price}</span>
+                <span className="line-through">&#8377;{data.new_price}</span>
               </p>
               <div className="flex justify-center">
                 <button className="text-[10px] flex items-center  bg-red-500 text-white p-1 px-3 hover:bg-red-800 duration-300">
@@ -679,7 +679,7 @@ const Women = () => {
                 className="w-full h-40 object-contain mb-2"
               />
               <p className="text-xs text-center">{data.title}</p>
-              <p className="text-center text-amber-800">{data.price}</p>
+              <p className="text-center text-amber-800">&#8377;{data.price}</p>
               <div className="flex justify-center">
                 <button className="text-[10px] flex items-center bg-red-500 text-white p-1 px-3 hover:bg-red-800 duration-300">
                   <FaShoppingCart /> Add to cart
