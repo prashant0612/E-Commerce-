@@ -94,7 +94,23 @@ const Header = () => {
           <FaCartArrowDown className="mr-10 text-2xl hidden max-[768px]:relative max-[768px]:mr-0 max-[768px]:block" />
         </Link>
 
-        <li className="max-[768px]:block block">
+        <li className="flex items-center justify-center align-middle max-[768px]:hidden mr-2">
+          {isAuthenticated && (
+            <div className="flex align-middle items-center">
+              <p className="text-purple-700 font-semibold">
+                Welcome
+                <span className="font-bold text-black ml-4">{user.name}</span>
+              </p>
+              <img
+                src={user.picture}
+                alt="image"
+                className="w-10 rounded-full ml-3"
+              />
+            </div>
+          )}
+        </li>
+
+        <li className="max-[768px]:block ">
           {isAuthenticated ? (
             <button
               className=" bg-red-600 p-2 px-5 rounded-2xl text-white font-bold  max-[768px]:px-3 max-[768px]:rounded-xl max-[768px]:ml-2"
@@ -134,7 +150,7 @@ const Header = () => {
         )}
       </div>
 
-      <li className="flex items-center justify-center align-middle">
+      <li className="flex items-center justify-center align-middle hidden max-[768px]:block">
           {isAuthenticated && (
             <div className="flex align-middle items-center">
               <p className="text-purple-700 font-semibold">
