@@ -94,7 +94,7 @@ const Header = () => {
           <FaCartArrowDown className="mr-10 text-2xl hidden max-[768px]:relative max-[768px]:mr-0 max-[768px]:block" />
         </Link>
 
-        <li className="max-[768px]:block">
+        <li className="max-[768px]:block hidden">
           {isAuthenticated ? (
             <button
               className=" bg-red-600 p-2 px-5 rounded-2xl text-white font-bold  max-[768px]:px-3 max-[768px]:rounded-xl max-[768px]:ml-2"
@@ -114,7 +114,7 @@ const Header = () => {
           )}
         </li>
       </ul>
-      <div className="max-[768px]:hidden">
+      <div className="max-[768px]:hidden block">
         {isAuthenticated ? (
           <button
             className=" bg-red-600 p-2 px-5 rounded-2xl text-white font-bold  max-[768px]:px-3 max-[768px]:rounded-xl max-[768px]:ml-2"
