@@ -91,24 +91,8 @@ const Header = () => {
         </li>
         <Link to="/cart">
           {" "}
-          <FaCartArrowDown className="mr-10 text-2xl hidden max-[768px]:mr-0 max-[768px]:block" />
+          <FaCartArrowDown className="mr-10 text-2xl hidden max-[768px]:relative max-[768px]:mr-0 max-[768px]:block" />
         </Link>
-
-        <li className="flex items-center justify-center align-middle">
-          {isAuthenticated && (
-            <div className="flex align-middle items-center">
-              <p className="text-purple-700 font-semibold">
-                Welcome
-                <span className="font-bold text-black ml-4">{user.name}</span>
-              </p>
-              <img
-                src={user.picture}
-                alt="image"
-                className="w-10 rounded-full ml-3"
-              />
-            </div>
-          )}
-        </li>
 
         <li className="max-[768px]:block">
           {isAuthenticated ? (
@@ -150,8 +134,24 @@ const Header = () => {
         )}
       </div>
 
+      <li className="flex items-center justify-center align-middle">
+          {isAuthenticated && (
+            <div className="flex align-middle items-center">
+              <p className="text-purple-700 font-semibold">
+                Welcome
+                <span className="font-bold text-black ml-4">{user.name}</span>
+              </p>
+              <img
+                src={user.picture}
+                alt="image"
+                className="w-10 rounded-full ml-3"
+              />
+            </div>
+          )}
+        </li>
+
       <Link to="/cart">
-        <span className="text-xl font-extrabold text-purple-600 absolute top-1 right-11 z-10 max-[768px]:top-9 max-[768px]:right-[100px]">
+        <span className="text-xl font-extrabold text-purple-600 absolute top-1 right-11 z-10 max-[768px]:top-9 max-[768px]:right-[102px]">
           {cartItems.length}
         </span>
         <FaCartArrowDown className="mr-10 text-2xl max-[768px]:hidden relative" />
